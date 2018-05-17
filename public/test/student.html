@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	      <title>Taktikbordet</title>
+	      <link rel="stylesheet" href="style.css" />
+	      <script src="/socket.io/socket.io.js"></script>
+	      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	      <script src="script.js"></script>
+
+   </head>
+   <body>
+   		<div class="container center">
+   			<h1>de_dust2</h1>
+   			
+   			<div id="menu" style="display: none">
+	   			<!-- <ul>
+	   				<li><button class="redColor" style="color:red">Röd</button><br><button class="blueColor" style="color:#5d79ae">CT</button><button class="orangeColor" style="color:#de9b35">T</button> <br>Rita</li>
+	   				<li><button class="eraser">Sudda</button></li>
+	   				<li><button class="clear">Rensa</button></li>
+	   				<li><button class="zoomIn">Zooma in</button><br><button class="zoomOut">Zooma ut</button><br>Zoom</li>
+	   			</ul> -->
+	   		</div>
+	   		<div id="canvases">
+	   			<canvas id="mapCanvas" width="700" height="700"></canvas>
+   				<canvas id="drawCanvas" width="700" height="700"></canvas>
+   			</div>
+   			<div id="mapMenu" style="display: none">
+	   			<!-- <ul>
+	   				<li><img class="mapIcon" id="cache" src="/img/de_cache_radar.png" width="50"/><br>Cache</li>
+	   				<li><img class="mapIcon" id="cbble" src="/img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
+	   				<li><img class="mapIcon" id="dust2" src="/img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
+	   				<li><img class="mapIcon" id="inferno" src="/img/de_inferno_radar.png" width="50"/><br>Inferno</li>
+	   				<li><img class="mapIcon" id="mirage" src="/img/de_mirage_radar.png" width="50"/><br>Mirage</li>
+	   				<li><img class="mapIcon" id="nuke" src="/img/de_nuke_radar.png" width="50"/><br>Nuke</li>
+	   				<li><img class="mapIcon" id="overpass" src="/img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
+	   			</ul> -->
+	   		</div>
+	   		<h3 id="student">student</h3>
+     	 </div>
+   </body>
+</html>
