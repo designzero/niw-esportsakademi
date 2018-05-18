@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html>
-   <head>
-	      <title>Taktikbordet</title>
-	      <link rel="stylesheet" href="style.css" />
-	      <script src="/socket.io/socket.io.js"></script>
-	      <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-	      <script src="script.js"></script>
+	<head>
+		<title>NiW Esportsakademi</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark py-0 mb-4 bg-niw">
+			<a class="navbar-brand" href="/"><img src="img/logga.png" alt="Niw logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="lessons.html">Lektioner <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="tactics.html">Taktik</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Profil<img class="ml-2" src="img/baseline_account_circle_white_36dp.png"></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid">
 
-   </head>
-   <body>
-   		<div class="container center">
-   			<h1>de_dust2</h1>
-   			
-   			<div id="menu" style="display: none">
-	   			<!-- <ul>
-	   				<li><button class="redColor" style="color:red">Röd</button><br><button class="blueColor" style="color:#5d79ae">CT</button><button class="orangeColor" style="color:#de9b35">T</button> <br>Rita</li>
-	   				<li><button class="eraser">Sudda</button></li>
-	   				<li><button class="clear">Rensa</button></li>
-	   				<li><button class="zoomIn">Zooma in</button><br><button class="zoomOut">Zooma ut</button><br>Zoom</li>
-	   			</ul> -->
+			<h3 class="mapTitle mt-4">de_dust2</h3>
+   		<div class="canvasContainer mx-auto">
+   			<div id="toolMenu" class="align-top" style="display: none">
+	   			<ul>
+	   				<li><img src="img/baseline_edit_white_36dp.png" width="36" id="pen" title="Rita (Klicka för fler färgval)"></li>
+	   				<li><img src="img/eraser-36.png" width="36" id="eraser" title="Sudda"></li>
+	   				<li><img src="img/baseline_undo_white_36dp.png" width="36" class="undo" title="Ångra"></li>
+	   				<li><img src="img/baseline_redo_white_36dp.png" width="36" class="redo" title="Gör om"></li>
+	   				<li><img src="img/baseline_rotate_right_white_36dp.png" width="36" class="rotateCW" title="Rotera"></li>
+	   				<li><img src="img/outline_delete_white_36dp.png" class="clear" title="Rensa"></li>
+	   			</ul>
 	   		</div>
 	   		<div id="canvases">
 	   			<canvas id="mapCanvas" width="700" height="700"></canvas>
    				<canvas id="drawCanvas" width="700" height="700"></canvas>
    			</div>
    			<div id="mapMenu" style="display: none">
-	   			<!-- <ul>
+	   			<ul>
 	   				<li><img class="mapIcon" id="cache" src="/img/de_cache_radar.png" width="50"/><br>Cache</li>
 	   				<li><img class="mapIcon" id="cbble" src="/img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
 	   				<li><img class="mapIcon" id="dust2" src="/img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
@@ -36,9 +57,22 @@
 	   				<li><img class="mapIcon" id="mirage" src="/img/de_mirage_radar.png" width="50"/><br>Mirage</li>
 	   				<li><img class="mapIcon" id="nuke" src="/img/de_nuke_radar.png" width="50"/><br>Nuke</li>
 	   				<li><img class="mapIcon" id="overpass" src="/img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
-	   			</ul> -->
+	   			</ul>
+	   		<div id="mapsDrawer"><div id="mapsArrow">^</div>Kartor</div>
 	   		</div>
-	   		<h3 id="student">student</h3>
+	   		<h5 id="student">student</h5>	
+				<!-- <p><a href="student.html" target="_blank"><button>öppna student i ny flik</button></a></p> -->
      	 </div>
-   </body>
+
+		<!-- </div> -->
+		<nav class="navbar fixed-bottom navbar-dark py-0 bg-niw">
+		  <a class="navbar-brand mx-auto" href="#">When gaming becomes lifestyle</a>
+		</nav>
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/popper.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<!-- <script src="/js/script.js"></script> -->
+		<script src="/js/tactics.js"></script>
+	</body>
 </html>
