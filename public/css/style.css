@@ -9,8 +9,14 @@ a {
 	text-decoration: none;
 }
 
+.wrapper {
+	max-width: 1440px;
+}
 .bg-niw {
 	background: #466083;
+}
+
+.navbar {
 	box-shadow: 0 0px 5px 2px rgba(121, 180, 250, 0.8);
 	animation: pulsate 2s ease-out infinite;
 }
@@ -29,12 +35,37 @@ a {
 	background: #1D3C52;
 }
 
+.bg-toolbar {
+	background: #1B2736;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+}
+
+.notes {
+	min-height: 200px;
+}
+
 /*.navbar-niw {
 	padding: 6px !important;
 }*/
 
 .nav-spacer {
 	width: 100px;
+}
+
+.top-spacer {
+	height: 40px;
+}
+
+hr {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #EEEEEE -moz-use-text-color #FFFFFF;
+  border-style: solid none;
+  border-width: 1px 0;
+  margin: 18px 0;
 }
 
 .main-nav li {
@@ -50,6 +81,21 @@ a {
 	position: absolute;
 	top: 35px;
 	font-size: 0.8em;
+}
+
+.bg-card {
+	background: #1D3C52;
+	border: none;
+}
+
+.btn-lsearch {
+	border-color: white;
+	height: 38px;
+
+}
+
+.notes {
+	height: 100%;
 }
 
 /*------------------------------------------------*/
