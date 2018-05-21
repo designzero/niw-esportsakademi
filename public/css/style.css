@@ -1,16 +1,19 @@
-html, body {
+body {
 	color: white;
 	background: #1D3C52;
 	font-family: Verdana, Arial, sans-serif;
 	box-sizing: border-box;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 60px;
 }
 
 a {
 	text-decoration: none;
 }
 
-.wrapper {
-	max-width: 1440px;
+.tactic-wrapper {
+	max-width: 1400px;
 }
 
 .navbar {
@@ -41,10 +44,6 @@ a {
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
 }
 
-.notes {
-	min-height: 200px;
-}
-
 /*.navbar-niw {
 	padding: 6px !important;
 }*/
@@ -54,7 +53,7 @@ a {
 }
 
 .top-spacer {
-	height: 40px;
+	height: 30px;
 }
 
 hr {
@@ -84,6 +83,14 @@ hr {
 	font-size: 0.8em;
 }
 
+footer {
+	position: absolute;
+	height: 40px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
 .bg-card {
 	background: #1D3C52;
 	border: none;
@@ -92,11 +99,15 @@ hr {
 .btn-lsearch {
 	border-color: white;
 	height: 38px;
+}
 
+.card-deck {
+	font-size: 0.8em;
 }
 
 .notes {
 	height: 100%;
+	min-height: 200px;
 }
 
 /*------------------------------------------------*/
