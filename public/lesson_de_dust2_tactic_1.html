@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-md navbar-dark navbar-niw bg-niw">
+		<nav class="navbar navbar-expand-md navbar-dark bg-niw-medium">
 		  <a class="navbar-brand" href="index.html"><img src="img/logga.png" alt="Niw logo"><span id="logoText"></span></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -32,54 +32,279 @@
 		    <a href="#"><img src="img/baseline_account_circle_white_36dp.png"></a>
 		  </div>
 		</nav>
-		<nav aria-label="breadcrumb bg-niw3">
-		  <ol class="breadcrumb bg-niw3">
+		<nav aria-label="breadcrumb">
+		  <ol class="breadcrumb bg-niw-dark">
 		    <li class="breadcrumb-item"><a href="lessons.html">Lektioner</a></li>
 		    <li class="breadcrumb-item "><a href="lesson_de_dust2.html">de_dust2</a></li>
 		    <li class="breadcrumb-item active" aria-current="page">Taktik 1</li>
 		  </ol>
 		</nav>
 		<div class="container-fluid tactic-wrapper">
-			<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 stepwizard">
-				<hr>
-			</div>
+			<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+		
+			<div class="stepwizard">
+			        <div class="stepwizard-row setup-panel">
+			            <div class="stepwizard-step col-xs-3"> 
+			                <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
+			                <p><small>Video</small></p>
+			            </div>
+			            <div class="stepwizard-step col-xs-3"> 
+			                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+			                <p><small>Quiz</small></p>
+			            </div>
+			            <div class="stepwizard-step col-xs-3"> 
+			                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+			                <p><small>Video</small></p>
+			            </div>
+			            <div class="stepwizard-step col-xs-3"> 
+			                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+			                <p><small>Quiz</small></p>
+			            </div>
+			            <div class="stepwizard-step col-xs-3"> 
+			                <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+			                <p><small>Repetition</small></p>
+			            </div>
+			        </div>
+			    </div>
+		   	</div>
 			<div class="top-spacer"></div>
 			<div class="row mx-auto">
-				<div class="col-md-7">
-					<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg">
+				<div class="col-lg-7">
+					<a href="#" data-toggle="modal" data-target="#exampleModalCenter">
+						<!-- Insert video here -->
+						
+						<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg"><!-- remove this -->
+					</a>
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered" role="document">
+					    <div class="modal-content bg-niw-light">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Grattis!</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        Steg 1/5 avklarat. Gå vidare till nästa steg.
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					        <a href="lesson_de_dust2_tactic_1_2.html"><button type="button" class="btn btn-dark">-></button></a>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 					<h2 class="mt-2 mb-4">Smoke på bombsite B (de_dust2)</h2>
-						<div class="col-xl-10 py-2 bg-niw">
+						<div class="col-xl-10 py-2 mb-4 bg-niw-light notes-shadow">
 							<h5>Att tänka på:</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 				</div>
-				<div class="col-md-5">
-					<div class="container-fluid mx-auto px-0 bg-niw notes">
+				<div class="col-lg-5">
+					<div class="container-fluid mx-auto px-0 bg-niw-light notes notes-shadow">
 						<div class="btn-toolbar bg-toolbar py-1 mb-3" role="toolbar" aria-label="Toolbar with button groups">
 						  <div class="btn-group mr-2 mx-auto" role="group" aria-label="First group">
-						    <button type="button" class="btn btn-secondary">1</button>
-						    <button type="button" class="btn btn-secondary">2</button>
-						    <button type="button" class="btn btn-secondary">3</button>
-						    <button type="button" class="btn btn-secondary">4</button>
-						    <button type="button" class="btn btn-secondary">5</button>
-						    <button type="button" class="btn btn-secondary">6</button>
-						    <button type="button" class="btn btn-secondary">7</button>
+						    <button type="button" class="btn btn-dark">
+						    	
+								<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1025.000000, -217.000000)">
+								            <g id="ic_format_bold" transform="translate(1018.000000, 213.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M15.6,10.79 C16.57,10.12 17.25,9.02 17.25,8 C17.25,5.74 15.5,4 13.25,4 L7,4 L7,18 L14.04,18 C16.13,18 17.75,16.3 17.75,14.21 C17.75,12.69 16.89,11.39 15.6,10.79 L15.6,10.79 Z M10,6.5 L13,6.5 C13.83,6.5 14.5,7.17 14.5,8 C14.5,8.83 13.83,9.5 13,9.5 L10,9.5 L10,6.5 L10,6.5 Z M13.5,15.5 L10,15.5 L10,12.5 L13.5,12.5 C14.33,12.5 15,13.17 15,14 C15,14.83 14.33,15.5 13.5,15.5 L13.5,15.5 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark">
+						    	
+								<svg width="12px" height="14px" viewBox="0 0 12 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1064.000000, -217.000000)" fill="#FFFFFF">
+								            <g id="ic_format_italic" transform="translate(1058.000000, 213.000000)">
+								                <g id="Icon-24px">
+								                    <polygon id="Shape" points="10 4 10 7 12.21 7 8.79 15 6 15 6 18 14 18 14 15 11.79 15 15.21 7 18 7 18 4"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark pb-0">
+								
+								<svg width="14px" height="18px" viewBox="0 0 14 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1043.000000, -217.000000)">
+								            <g id="ic_format_underlined" transform="translate(1038.000000, 214.000000)">
+								                <g id="Icon-24px">
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                    <path d="M12,17 C15.31,17 18,14.31 18,11 L18,3 L15.5,3 L15.5,11 C15.5,12.93 13.93,14.5 12,14.5 C10.07,14.5 8.5,12.93 8.5,11 L8.5,3 L6,3 L6,11 C6,14.31 8.69,17 12,17 L12,17 Z M5,19 L5,21 L19,21 L19,19 L5,19 L5,19 Z" id="Shape" fill="#FFFFFF"></path>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+							</button>
+
+						    <button type="button" class="btn btn-dark pb-0">
+
+								<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1081.000000, -217.000000)">
+								            <g id="ic_format_align_left" transform="translate(1078.000000, 214.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M15,15 L3,15 L3,17 L15,17 L15,15 L15,15 Z M15,7 L3,7 L3,9 L15,9 L15,7 L15,7 Z M3,13 L21,13 L21,11 L3,11 L3,13 L3,13 Z M3,21 L21,21 L21,19 L3,19 L3,21 L3,21 Z M3,3 L3,5 L21,5 L21,3 L3,3 L3,3 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark pb-0">
+
+								<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1123.000000, -217.000000)">
+								            <g id="ic_format_align_center" transform="translate(1120.000000, 214.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M7,15 L7,17 L17,17 L17,15 L7,15 L7,15 Z M3,21 L21,21 L21,19 L3,19 L3,21 L3,21 Z M3,13 L21,13 L21,11 L3,11 L3,13 L3,13 Z M7,7 L7,9 L17,9 L17,7 L7,7 L7,7 Z M3,3 L3,5 L21,5 L21,3 L3,3 L3,3 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark pb-0">
+
+								<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1144.000000, -217.000000)">
+								            <g id="ic_format_align_right" transform="translate(1141.000000, 214.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M3,21 L21,21 L21,19 L3,19 L3,21 L3,21 Z M9,17 L21,17 L21,15 L9,15 L9,17 L9,17 Z M3,13 L21,13 L21,11 L3,11 L3,13 L3,13 Z M9,9 L21,9 L21,7 L9,7 L9,9 L9,9 Z M3,3 L3,5 L21,5 L21,3 L3,3 L3,3 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark pb-0">
+
+								<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1102.000000, -217.000000)">
+								            <g id="ic_format_align_justify" transform="translate(1099.000000, 214.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M3,21 L21,21 L21,19 L3,19 L3,21 L3,21 Z M3,17 L21,17 L21,15 L3,15 L3,17 L3,17 Z M3,13 L21,13 L21,11 L3,11 L3,13 L3,13 Z M3,9 L21,9 L21,7 L3,7 L3,9 L3,9 Z M3,3 L3,5 L21,5 L21,3 L3,3 L3,3 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark pb-0">
+
+								
+								<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1164.000000, -216.000000)">
+								            <g id="ic_format_list_bulleted" transform="translate(1162.000000, 212.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M4,10.5 C3.17,10.5 2.5,11.17 2.5,12 C2.5,12.83 3.17,13.5 4,13.5 C4.83,13.5 5.5,12.83 5.5,12 C5.5,11.17 4.83,10.5 4,10.5 L4,10.5 Z M4,4.5 C3.17,4.5 2.5,5.17 2.5,6 C2.5,6.83 3.17,7.5 4,7.5 C4.83,7.5 5.5,6.83 5.5,6 C5.5,5.17 4.83,4.5 4,4.5 L4,4.5 Z M4,16.67 C3.26,16.67 2.67,17.27 2.67,18 C2.67,18.73 3.27,19.33 4,19.33 C4.73,19.33 5.33,18.73 5.33,18 C5.33,17.27 4.74,16.67 4,16.67 L4,16.67 Z M7,19 L21,19 L21,17 L7,17 L7,19 L7,19 Z M7,13 L21,13 L21,11 L7,11 L7,13 L7,13 Z M7,5 L7,7 L21,7 L21,5 L7,5 L7,5 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
+						    <button type="button" class="btn btn-dark pb-0">
+															
+								<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+								    <desc>Created with Sketch.</desc>
+								    <defs></defs>
+								    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								        <g id="Desktop-HD-admin-vy" transform="translate(-1186.000000, -217.000000)">
+								            <g id="ic_format_list_numbered" transform="translate(1184.000000, 213.000000)">
+								                <g id="Icon-24px">
+								                    <path d="M2,17 L4,17 L4,17.5 L3,17.5 L3,18.5 L4,18.5 L4,19 L2,19 L2,20 L5,20 L5,16 L2,16 L2,17 L2,17 Z M3,8 L4,8 L4,4 L2,4 L2,5 L3,5 L3,8 L3,8 Z M2,11 L3.8,11 L2,13.1 L2,14 L5,14 L5,13 L3.2,13 L5,10.9 L5,10 L2,10 L2,11 L2,11 Z M7,5 L7,7 L21,7 L21,5 L7,5 L7,5 Z M7,19 L21,19 L21,17 L7,17 L7,19 L7,19 Z M7,13 L21,13 L21,11 L7,11 L7,13 L7,13 Z" id="Shape" fill="#FFFFFF"></path>
+								                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+								                </g>
+								            </g>
+								        </g>
+								    </g>
+								</svg>
+						    </button>
 						  </div>
 						  <div class="btn-group mr-2 ml-auto" role="group" aria-label="Second group">
-						    <button type="button" class="btn btn-secondary">5</button> 
+						    <button type="button" class="btn btn-dark pb-0">
+
+						    	<svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						    	    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+						    	    <desc>Created with Sketch.</desc>
+						    	    <defs></defs>
+						    	    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+						    	        <g id="Desktop-HD-admin-vy" transform="translate(-1381.000000, -216.000000)">
+						    	            <g id="ic_format_paint" transform="translate(1377.000000, 214.000000)">
+						    	                <g id="Icon-24px">
+						    	                    <path d="M18,4 L18,3 C18,2.45 17.55,2 17,2 L5,2 C4.45,2 4,2.45 4,3 L4,7 C4,7.55 4.45,8 5,8 L17,8 C17.55,8 18,7.55 18,7 L18,6 L19,6 L19,10 L9,10 L9,21 C9,21.55 9.45,22 10,22 L12,22 C12.55,22 13,21.55 13,21 L13,12 L21,12 L21,4 L18,4 L18,4 Z" id="Shape" fill="#FFFFFF"></path>
+						    	                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+						    	                </g>
+						    	            </g>
+						    	        </g>
+						    	    </g>
+						    	</svg>
+						    </button> 
 						  </div>
 						</div>
 						<div class="container">
 							<ol class="mx-3">
 						  		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+						  		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
 						  	</ol>
 						</div>
+					</div><!-- notes end -->
+					<div class="col-2 offset-8 mt-2 mx-auto">
+						<button class="btn btn-dark">Spara</button>
 					</div>
 				</div>				
 			</div>
 		</div>
 		<footer>
-			<nav class="navbar navbar-dark py-0 bg-niw">
+			<nav class="navbar navbar-dark py-0 bg-niw-medium">
 			  <a class="navbar-brand mx-auto" href="#">When gaming becomes lifestyle</a>
 			</nav>
 		</footer>
@@ -87,6 +312,7 @@
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<!-- <script src="/socket.io/socket.io.js"></script> -->
-		<!-- <script src="js/script.js"></script> -->
+		<script src="js/script.js"></script>
+		<script src="js/stepwizard.js"></script>
 	</body>
 </html>
