@@ -39,38 +39,37 @@
 		    <li class="breadcrumb-item active" aria-current="page">Taktik 1</li>
 		  </ol>
 		</nav>
-		<div class="container-fluid tactic-wrapper">
+		<div class="container-fluid wrapper">
 			<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">		
-			<div class="stepwizard">
+				<div class="stepwizard">
 			        <div class="stepwizard-row setup-panel">
 			            <div class="stepwizard-step col-xs-3"> 
 			                <a href="lesson_de_dust2_tactic_1.html" type="button" class="btn btn-success btn-circle">1</a>
-			                <p><small>Video</small></p>
+			                <p><small></small></p>
 			            </div>
 			            <div class="stepwizard-step col-xs-3"> 
 			                <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-			                <p><small>Quiz</small></p>
+			                <p><small></small></p>
 			            </div>
 			            <div class="stepwizard-step col-xs-3"> 
 			                <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-			                <p><small>Video</small></p>
+			                <p><small></small></p>
 			            </div>
 			            <div class="stepwizard-step col-xs-3"> 
 			                <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-			                <p><small>Quiz</small></p>
+			                <p><small></small></p>
 			            </div>
 			            <div class="stepwizard-step col-xs-3"> 
-			                <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
-			                <p><small>Repetition</small></p>
+			                <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled">5</a>
+			                <p><small></small></p>
 			            </div>
 			        </div>
 			    </div>
 		   	</div>
-			<div class="top-spacer"></div>
 			<div class="row mx-auto">
 				<div class="col-md-8 mx-auto">
 					<div class="quiz outer-shadow">
-						<div class="col-lg-8 offset-lg-2 mb-4">
+						<div class="col-lg-8 offset-lg-2 mb-3">
 							<h5>Fråga 1</h5>
 							<hr class="mt-0">
 							<div class="custom-control custom-radio">
@@ -86,7 +85,7 @@
 							  <label class="custom-control-label quiz-question" for="customRadio3">Svar 3</label>
 							</div>
 						</div>
-						<div class="col-lg-8 offset-lg-2 mb-4">
+						<div class="col-lg-8 offset-lg-2 mb-3">
 							<h5>Fråga 2</h5>
 							<hr class="mt-0">
 							<div class="custom-control custom-radio">
@@ -102,7 +101,7 @@
 							  <label class="custom-control-label quiz-question" for="customRadio6">Svar 3</label>
 							</div>
 						</div>
-						<div class="col-lg-8 offset-lg-2 mb-4">
+						<div class="col-lg-8 offset-lg-2 mb-3">
 							<h5>Fråga 3</h5>
 							<hr class="mt-0">
 							<div class="custom-control custom-radio">
@@ -125,26 +124,24 @@
 						</div>
 					</div>
 				</div>
-				<!-- Modal -->
+					<!-- Modal -->
 					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
-					    <div class="modal-content bg-niw-light">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLongTitle">Grattis!</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
+					    <div class="modal-content bg-modal">
+					      <div class="modal-header mx-auto">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Bra jobbat!</h5>
 					      </div>
-					      <div class="modal-body">
-					        Du hade 2/3 rätt.<br>Gå vidare till nästa steg.
+					      <div class="modal-body text-center">
+					        Du hade 3/3 rätt!<br> Gå vidare till nästa steg eller försök igen.
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Försök igen</button>
-					        <a href="lesson_de_dust2_tactic_1_2.html"><button type="button" class="btn btn-dark">-></button></a>
+					        <button type="button" class="btn btn-dark mr-auto" data-dismiss="modal">Försök igen</button>
+					        <button type="button" class="btn btn-dark" data-dismiss="modal">Kolla svar</button>
+					        <a href="lesson_de_dust2_tactic_1_2.html"><button type="button" class="btn btn-dark nextBtn">-></button></a>
 					      </div>
 					    </div>
 					  </div>
-					</div>				
+					</div><!-- Modal end -->				
 			</div>
 		</div>
 		<footer>
@@ -157,6 +154,6 @@
 		<script src="js/bootstrap.min.js"></script>
 		<!-- <script src="/socket.io/socket.io.js"></script> -->
 		<script src="js/script.js"></script>
-		<script src="js/stepwizard.js"></script>
+		<!-- <script src="js/stepwizard.js"></script> -->
 	</body>
 </html>

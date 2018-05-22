@@ -39,10 +39,9 @@
 		    <li class="breadcrumb-item active" aria-current="page">Taktik 1</li>
 		  </ol>
 		</nav>
-		<div class="container-fluid tactic-wrapper">
+		<div class="container-fluid wrapper mb-4">
 			<div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-		
-			<div class="stepwizard">
+				<div class="stepwizard">
 			        <div class="stepwizard-row setup-panel">
 			            <div class="stepwizard-step col-xs-3"> 
 			                <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
@@ -67,36 +66,34 @@
 			        </div>
 			    </div>
 		   	</div>
-			<div class="top-spacer"></div>
 			<div class="row mx-auto">
 				<div class="col-lg-7">
 					<a href="#" data-toggle="modal" data-target="#exampleModalCenter">
 						<!-- Insert video here -->
-						
-						<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg"><!-- remove this -->
+						<div class="video">
+							<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg"><!-- remove this -->
+							<img src="img/play.png" class="img-fluid play">
+						</div>
 					</a>
 					<!-- Modal -->
-					<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+					<div class="modal fade modal-video" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 					  <div class="modal-dialog modal-dialog-centered" role="document">
-					    <div class="modal-content bg-niw-light">
-					      <div class="modal-header">
-					        <h5 class="modal-title" id="exampleModalLongTitle">Grattis!</h5>
-					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					          <span aria-hidden="true">&times;</span>
-					        </button>
+					    <div class="modal-content bg-modal">
+					      <div class="modal-header mx-auto">
+					        <h5 class="modal-title" id="exampleModalLongTitle">Bra jobbat!</h5>
 					      </div>
-					      <div class="modal-body">
+					      <div class="modal-body text-center">
 					        Steg 1/5 avklarat. Gå vidare till nästa steg.
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-					        <a href="lesson_de_dust2_tactic_1_2.html"><button type="button" class="btn btn-dark">-></button></a>
+					        <button type="button" class="btn btn-dark mr-auto" data-dismiss="modal">Tillbaka</button>
+					        <a href="lesson_de_dust2_tactic_1_2.html"><button type="button" class="btn btn-dark nextBtn">-></button></a>
 					      </div>
 					    </div>
 					  </div>
-					</div>
+					</div><!-- Modal end -->
 					<h2 class="mt-2 mb-4">Smoke på bombsite B (de_dust2)</h2>
-						<div class="col-xl-10 py-2 mb-4 bg-niw-light notes-shadow">
+						<div class="col-xl-10 py-2 bg-niw-light notes-shadow">
 							<h5>Att tänka på:</h5>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
