@@ -217,6 +217,16 @@ footer {
 	width: 100%;
 }
 
+.bg-correct {
+	border-color: lightgreen;
+	background: green;
+}
+
+.bg-wrong {
+	border-color: salmon;
+	background: red;
+}
+
 
 .modal {
 	border: none;
