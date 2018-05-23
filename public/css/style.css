@@ -227,6 +227,11 @@ footer {
 	background: red;
 }
 
+.bg-noselect {
+	border-color: lightgrey;
+	color: lightgrey;
+}
+
 
 .modal {
 	border: none;
