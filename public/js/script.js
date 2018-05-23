@@ -10,8 +10,8 @@ $(document).ready(function() {
 });
 
 $("#examine").click(function () {
-	
-}
+
+});
 
 
 $("#check-answers").click(function () {
