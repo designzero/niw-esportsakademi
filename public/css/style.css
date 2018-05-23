@@ -12,7 +12,7 @@ a {
 	text-decoration: none;
 }
 
-.tactic-wrapper {
+.wrapper {
 	max-width: 1400px;
 }
 
@@ -27,21 +27,25 @@ a {
     100% { box-shadow: 0 0 5px 2px rgba(121, 180, 250, 0.6); }
 }
 
-.bg-niw {
-	background: #466083;
-}
-
-.bg-niw2 {
-	background: #7A8994;
-}
-
-.bg-niw3 {
+.bg-niw-dark {
 	background: #1D3C52;
 }
 
+.bg-niw-medium {
+	background: #466083;
+}
+
+.bg-niw-light {
+	background: #7A8994;
+}
+
+.bg-modal {
+	background: rgba(122, 137, 148, .75);
+	border: 1px	solid white;
+}
 .bg-toolbar {
-	background: #1B2736;
-	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.5);
+	background: #466083;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5);
 }
 
 /*.navbar-niw {
@@ -53,7 +57,7 @@ a {
 }
 
 .top-spacer {
-	height: 30px;
+	height: 36px;
 }
 
 hr {
@@ -105,9 +109,127 @@ footer {
 	font-size: 0.8em;
 }
 
+.outer-shadow {
+	box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+}
+
 .notes {
-	height: 100%;
+	height: 90%;
 	min-height: 200px;
+}
+
+.notes-shadow {
+	box-shadow: inset 0 0 1px 2px rgba(0,0,0,0.6);
+}
+
+/*------------------------------------------------*/
+/*Step wizard*/
+/*------------------------------------------------*/
+
+/*.stepwizard {
+	position: relative;
+}
+
+.stepwizard-step {
+	display: inline-block;
+	position: absolute;
+	margin-right: 20px;
+	width: 40px;
+	height: 40px;
+	bottom: 0;
+	left: 0px;
+	background: #528919;
+	vertical-align: middle;
+
+}*/
+
+.stepwizard-step p {
+    margin-top: 0px;
+    color:#666;
+}
+.stepwizard-row {
+    display: table-row;
+}
+.stepwizard {
+    display: table;
+    width: 100%;
+    position: relative;
+}
+.stepwizard-step button[disabled] {
+    /*opacity: 1 !important;
+    filter: alpha(opacity=100) !important;*/
+}
+.stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
+    opacity:1 !important;
+    color:#bbb;
+}
+.stepwizard-row:before {
+    top: 14px;
+    bottom: 0;
+    position: absolute;
+    content:" ";
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    z-index: 0;
+}
+.stepwizard-step {
+    display: table-cell;
+    text-align: center;
+    position: relative;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+
+.video {
+	position: relative;
+}
+
+.play {
+	position: absolute;
+	top: 42%;
+	left: 43%;
+	width: 15%;
+}
+
+/*------------------------------------------------*/
+/*Quiz*/
+/*------------------------------------------------*/
+
+.quiz {
+	background: #7A8994;
+	padding: 2em 0;
+	border-radius: 5px;
+}
+
+.quiz-question {
+	border: 1px solid white;
+	margin: 0.5em 0;
+	padding: 0.2em;
+	width: 100%;
+}
+
+
+.modal {
+	border: none;
+}
+
+.modal-header, .modal-footer {
+	border: none;
+}
+
+.modal-video {
+	position: absolute;
+	left: 0;
+	bottom: 50%;
 }
 
 /*------------------------------------------------*/
