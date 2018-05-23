@@ -5,10 +5,10 @@ $(document).ready(function() {
 	//------------------------------------------------
 	
 	$(".nav-item").click(function () {
-	    if($(".nav-item").hasClass("bg-niw3") == true){
-	        $(".nav-item").removeClass("bg-niw3");
+	    if($(".nav-item").hasClass("bg-niw-menu") == true){
+	        $(".nav-item").removeClass("bg-niw-menu");
 	    }
-	    $(this).addClass("bg-niw3");
+	    $(this).addClass("bg-niw-menu");
 
 	});
 

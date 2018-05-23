@@ -2,10 +2,10 @@ body {
 	color: white;
 	background: #1D3C52;
 	font-family: Verdana, Arial, sans-serif;
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 	min-height: 100vh;
 	position: relative;
-	padding-bottom: 60px;
+	padding-bottom: 64px;
 }
 
 a {
@@ -15,6 +15,10 @@ a {
 .wrapper {
 	max-width: 1400px;
 }
+
+/*------------------------------------------------*/
+/*Navbar*/
+/*------------------------------------------------*/
 
 .navbar {
 	box-shadow: 0 0px 5px 2px rgba(121, 180, 250, 0.8);
@@ -26,6 +30,43 @@ a {
     50%  { box-shadow: 0 0 8px 3px rgba(121, 180, 250, 0.8); }
     100% { box-shadow: 0 0 5px 2px rgba(121, 180, 250, 0.6); }
 }
+
+.main-nav li {
+	/*padding-top: 10px;*/
+	/*margin-right: 30px !important;*/
+}
+
+.nav-item {
+	position: relative;
+	width: 100px;
+	text-align: center;
+}
+/*.nav-item::after {
+	content: "";
+	display: block;
+	background: rgba(50,70,170,0.5);
+	background-blend-mode: screen;
+	position: absolute;
+	width: 100px;
+	height: 66px;
+	left: 0;
+	top: -13px;
+}
+*/
+.navbar-brand img {
+	height: 40px;
+}
+
+#logoText {
+	position: absolute;
+	top: 35px;
+	font-size: 0.8em;
+}
+
+
+/*------------------------------------------------*/
+/*Colors and spacers*/
+/*------------------------------------------------*/
 
 .bg-niw-dark {
 	background: #1D3C52;
@@ -39,6 +80,10 @@ a {
 	background: #7A8994;
 }
 
+.bg-niw-menu {
+	background: #34537D;
+}
+
 .bg-modal {
 	background: rgba(122, 137, 148, .75);
 	border: 1px	solid white;
@@ -47,10 +92,6 @@ a {
 	background: #466083;
 	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.5);
 }
-
-/*.navbar-niw {
-	padding: 6px !important;
-}*/
 
 .nav-spacer {
 	width: 100px;
@@ -72,20 +113,6 @@ hr {
   margin: 18px 0;
 }
 
-.main-nav li {
-	/*padding-top: 10px;*/
-	margin-right: 30px !important;
-}
-
-.navbar-brand img {
-	height: 40px;
-}
-
-#logoText {
-	position: absolute;
-	top: 35px;
-	font-size: 0.8em;
-}
 
 footer {
 	position: absolute;
@@ -103,6 +130,7 @@ footer {
 .btn-lsearch {
 	border-color: white;
 	height: 38px;
+	border-radius: 0 5px 5px 0;
 }
 
 .card-deck {
@@ -231,7 +259,6 @@ footer {
 	border-color: lightgrey;
 	color: lightgrey;
 }
-
 
 .modal {
 	border: none;
