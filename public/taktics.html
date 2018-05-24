@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+   <head>
+	      <title>Taktikbordet</title>
+	      <link rel="stylesheet" href="style.css" />
+	      <script src="/socket.io/socket.io.js"></script>
+	      <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+	      <script src="script.js"></script>
+
+   </head>
+   <body>
+   		<h1>de_dust2</h1>
+   		<div class="canvasContainer center">
+   			<div id="menu">
+	   			<ul>
+	   				<!-- <li><div class="circle red"></div><div class="circle ct"></div><div class="circle tr"></div></li> -->
+	   				<li><img src="img/baseline_edit_white_36dp.png" width="36" id="pen" title="Rita (Klicka för fler färgval)"></li>
+	   				<li><img src="img/eraser-36.png" width="36" id="eraser" title="Sudda"></li>
+	   				<!-- <li><img src="img/baseline-rotate_left-24px.svg" width="36" class="rotateCCW"/></li> -->
+	   				<li><img src="img/baseline_undo_white_36dp.png" width="36" class="undo" title="Ångra"></li>
+	   				<li><img src="img/baseline_redo_white_36dp.png" width="36" class="redo" title="Gör om"></li>
+	   				<li><img src="img/baseline_rotate_right_white_36dp.png" width="36" class="rotateCW" title="Rotera"></li>
+	   				<li><img src="img/outline_delete_white_36dp.png" class="clear" title="Rensa"></li>
+	   			</ul>
+	   		</div>
+	   		<div id="canvases">
+	   			<canvas id="mapCanvas" width="700" height="700"></canvas>
+   				<canvas id="drawCanvas" width="700" height="700"></canvas>
+   			</div>
+   			<div id="mapMenu">
+	   			<ul>
+	   				<li><img class="mapIcon" id="cache" src="/img/de_cache_radar.png" width="50"/><br>Cache</li>
+	   				<li><img class="mapIcon" id="cbble" src="/img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
+	   				<li><img class="mapIcon" id="dust2" src="/img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
+	   				<li><img class="mapIcon" id="inferno" src="/img/de_inferno_radar.png" width="50"/><br>Inferno</li>
+	   				<li><img class="mapIcon" id="mirage" src="/img/de_mirage_radar.png" width="50"/><br>Mirage</li>
+	   				<li><img class="mapIcon" id="nuke" src="/img/de_nuke_radar.png" width="50"/><br>Nuke</li>
+	   				<li><img class="mapIcon" id="overpass" src="/img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
+	   			</ul>
+	   		<div id="mapsDrawer"><div id="mapsArrow">^</div>Kartor</div>
+	   		</div>
+	   		<h3>lärare</h3>
+	   		<a href="student.html" target="_blank"><button>öppna student i ny flik</button></a>
+     	 </div>
+   </body>
+</html>

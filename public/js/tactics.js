@@ -245,6 +245,13 @@ document.addEventListener("DOMContentLoaded", function() {
 	let socket = io.connect();
 	socket.emit("cpush");
 
+	$("a[href$='#student']").click(function() {
+    if ( $('#studentsmall').css('visibility') == 'hidden' )
+	    $('#studentsmall').css('visibility','visible');
+	  else
+	    $('#studentsmall').css('visibility','hidden');
+	});
+
 	menu.onclick = function(e) {
 		console.log(e.target);
 		if(e.target.id == "pen") {

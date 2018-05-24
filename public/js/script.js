@@ -4,11 +4,22 @@ $(document).ready(function() {
 	//Navbar
 	//------------------------------------------------
 	
-	$(".nav-item").click(function () {
-	    if($(".nav-item").hasClass("bg-niw-menu") == true){
-	        $(".nav-item").removeClass("bg-niw-menu");
-	    }
-	    $(this).addClass("bg-niw-menu");
+	// $(".nav-item").click(function () {
+	//     if($(".nav-item").hasClass("bg-niw-menu") == true){
+	//         $(".nav-item").removeClass("bg-niw-menu");
+	//     }
+	//     $(this).addClass("bg-niw-menu");
+
+	// });
+
+
+	$(".btn-stats").click(function () {
+	    $("#student-stats").toggle();
+	    $("#student-edit").toggle();
+	    // if($(".nav-item").hasClass("bg-niw-menu") == true){
+	    //     $(".nav-item").removeClass("bg-niw-menu");
+	    // }
+	    // $(this).addClass("bg-niw-menu");
 
 	});
 
@@ -17,6 +28,7 @@ $(document).ready(function() {
 	//------------------------------------------------
 	
 	$("input[type='radio']").click(function () {
+		$(this).next("label").removeClass("bg-noselect");
 		$(this).parent().siblings().find("label").addClass("bg-noselect");
 	});
 

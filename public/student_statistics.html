@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>NiW Esportsakademi</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark navbar-niw bg-niw-medium">
+          <a class="navbar-brand" href="index.html"><img src="img/logga.png" alt="Niw logo"><span id="logoText"></span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="nav-spacer"></div>
+            <ul class="navbar-nav main-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="lessons.html">Lektioner <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link nav-link2" href="tactics.html">Karta</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav-item-side ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#upload.html"><img src="img/upload.png"></a>
+              </li> 
+              <li class="nav-item active">
+                <a class="nav-link nav-link-select" href="student_statistics.html">Elever</a>
+              </li>  
+              <li class="nav-item active">
+                <a class="nav-link nav-profile" href="profile_teacher.html">Profil<img src="img/baseline_account_circle_white_36dp.png"></a>
+              </li>    
+            </ul>       
+          </div>
+        </nav>
+        <div class="container-fluid wrapper">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="img/elev.jpg" class="img-fluid rounded-circle mb-2" alt="Responsive-image">
+                </div> 
+                <div class="col-md-3">
+                     <table class="table table-under">
+                            <tbody>
+                                <tr>
+                                    <td><h3 class="mb-0">Erik Forsén</h3></td>
+                                </tr>
+                                <tr>
+                                    <td>Steam_0:0:12345678</td>
+                                 </tr>
+                            </tbody>
+                        </table>
+                </div>
+                <div class="col-md-2">
+                    <div class="container-fluid mx-auto">
+                        <button class="btn btn-secondary bg-niw-medium btn-stats"><img src="img/ic_equalizer.png" alt="Responsive-image"></button>
+                        <button class="btn btn-secondary bg-niw-dark btn-stats"><img src="img/ic_settings.png" alt="Responsive-image" disabled="disabled"></button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content" id="student-stats">
+                        <img src="img/stats1.jpg" class="img-fluid" alt="Responsive-image">
+                    </div>
+                    <div class="row" id="student-edit">
+                        <div class="col-md-10">
+                            <div class="input-group input-group-sm mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Namn:</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Erik Forsén">
+                            </div>
+                            <div class="input-group input-group-sm mb-3">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroup-sizing-sm">Steam id:</span>
+                              </div>
+                              <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Steam_0:0:12345678">
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary bg-niw-medium mb-2">Spara</button>
+                            <button class="btn btn-danger btn-sm">Ta bort</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        
+		<footer>
+			<nav class="navbar navbar-dark py-0 bg-niw-medium">
+			  <a class="navbar-brand mx-auto" href="#">When gaming becomes a lifestyle</a>
+			</nav>
+		</footer>
+
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- <script src="/socket.io/socket.io.js"></script> -->
+		<script src="js/script.js"></script>
+	</body>
+</html>
