@@ -416,7 +416,7 @@ footer {
 	width: 305px;
 	height: 460px;
 	border: none;
-	z-index: 0;
+	z-index: -1;
 	overflow: hidden;
 }
 
