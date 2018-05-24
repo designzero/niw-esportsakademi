@@ -14,13 +14,18 @@ $(document).ready(function() {
 
 
 	$(".btn-stats").click(function () {
-	    $("#student-stats").toggle();
-	    $("#student-edit").toggle();
-	    // if($(".nav-item").hasClass("bg-niw-menu") == true){
-	    //     $(".nav-item").removeClass("bg-niw-menu");
-	    // }
-	    // $(this).addClass("bg-niw-menu");
-
+		if ($(this).is("#btn-settings")) {
+			$("#student-stats").hide();
+			$("#student-edit").show().css("display", "flex");
+			$(this).addClass("bg-niw-medium");
+			$("#btn-chart").removeClass("bg-niw-medium");
+		}
+		else {
+			$("#student-edit").hide();
+			$("#student-stats").show().css("display", "block");
+			$(this).addClass("bg-niw-medium");
+			$("#btn-settings").removeClass("bg-niw-medium");
+		}
 	});
 
 	//------------------------------------------------

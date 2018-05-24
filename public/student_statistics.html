@@ -38,9 +38,9 @@
           </div>
         </nav>
         <div class="container-fluid wrapper">
-            <div class="row align-items-center">
+            <div class="row align-items-center my-4">
                 <div class="col-md-2">
-                    <img src="img/elev.jpg" class="img-fluid rounded-circle mb-2" alt="Responsive-image">
+                    <img src="img/elev.jpg" class="img-fluid rounded-circle" alt="Responsive-image">
                 </div> 
                 <div class="col-md-3">
                      <table class="table table-under">
@@ -55,17 +55,17 @@
                         </table>
                 </div>
                 <div class="col-md-2">
-                    <div class="container-fluid mx-auto">
-                        <button class="btn btn-secondary bg-niw-medium btn-stats"><img src="img/ic_equalizer.png" alt="Responsive-image"></button>
-                        <button class="btn btn-secondary bg-niw-dark btn-stats"><img src="img/ic_settings.png" alt="Responsive-image" disabled="disabled"></button>
+                    <div class="container-fluid">
+                        <button class="btn btn-secondary bg-niw-medium btn-stats" id="btn-chart"><img src="img/ic_equalizer.png" alt="Responsive-image"></button>
+                        <button class="btn btn-secondary btn-stats" id="btn-settings"><img src="img/ic_settings.png" alt="Responsive-image" disabled="disabled"></button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="content" id="student-stats">
-                        <img src="img/stats1.jpg" class="img-fluid" alt="Responsive-image">
+                <div class="col-md-5" id="student">
+                    <div class="container-fluid" id="student-stats">
+                        <img src="img/stats1.jpg" class="img-fluid" id="chart" alt="Responsive-image">
                     </div>
-                    <div class="row" id="student-edit">
-                        <div class="col-md-10">
+                    <div class="container-fluid" id="student-edit">
+                        <div class="col-md-8">
                             <div class="input-group input-group-sm mb-3">
                               <div class="input-group-prepend">
                                 <span class="input-group-text" id="inputGroup-sizing-sm">Namn:</span>
@@ -79,7 +79,7 @@
                               <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Steam_0:0:12345678">
                             </div>
                         </div>
-                        <div class="col-md-2">
+                        <div class="col-md-2 offset-md-1">
                             <button class="btn btn-secondary bg-niw-medium mb-2">Spara</button>
                             <button class="btn btn-danger btn-sm">Ta bort</button>
                         </div>

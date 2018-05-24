@@ -258,6 +258,28 @@ footer {
 
 #student-edit {
 	display: none;
+	padding-top: 25px;
+	/*position: absolute;*/
+	/*height: 200px;*/
+}
+
+#student-stats img {
+	max-height: 200px;
+}
+
+#chart {
+	max-height: 360px;
+}
+
+#student {
+	/*position: relative;*/
+	/*height: 25vh;*/
+	/*margin-top: 30px;*/
+	
+}
+
+.btn-stats img {
+	width: 2em;
 }
 
 /*------------------------------------------------*/
