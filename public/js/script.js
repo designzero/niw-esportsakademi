@@ -17,14 +17,14 @@ $(document).ready(function() {
 		if ($(this).is("#btn-settings")) {
 			$("#student-stats").hide();
 			$("#student-edit").show().css("display", "flex");
-			$(this).addClass("bg-niw-medium");
-			$("#btn-chart").removeClass("bg-niw-medium");
+			$(this).addClass("bg-niw-menu");
+			$("#btn-chart").removeClass("bg-niw-menu");
 		}
 		else {
 			$("#student-edit").hide();
 			$("#student-stats").show().css("display", "block");
-			$(this).addClass("bg-niw-medium");
-			$("#btn-settings").removeClass("bg-niw-medium");
+			$(this).addClass("bg-niw-menu");
+			$("#btn-settings").removeClass("bg-niw-menu");
 		}
 	});
 
