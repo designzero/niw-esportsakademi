@@ -79,7 +79,7 @@ a {
 
 .btn-dark {
 	background: #466083; 
-	border-color: #7A8994;
+	border-color: #1D3C52;
 	border: none;
 }
 
@@ -97,6 +97,36 @@ a {
 
 .btn-dark:focus, .btn-dark:visited {
 	background: #34537D !important;
+	border: none;
+	box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);
+}
+
+.btn-primary.active {
+	background: #466083 !important; 
+	border-color: #1D3C52;
+	border: none;
+}
+
+.btn-primary:hover {
+	background: #3f679b !important;
+	box-shadow: none;
+	box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);
+}
+
+.btn-primary:active {
+	background: #34537D !important;
+	border: none;
+	/*box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4) !important;*/
+}
+
+.btn-primary {
+	background: #34537D !important;
+	border: none;
+	/*box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4) !important;*/
+}
+
+.btn-primary:focus, .btn-dark:visited {
+	background: #466083 !important;
 	border: none;
 	box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);
 }
@@ -305,6 +335,47 @@ footer {
 
 .btn-stats img {
 	width: 2em;
+}
+
+
+
+/*------------------------------------------------*/
+/*Upload*/
+/*------------------------------------------------*/
+
+/* change border radius for the tab , apply corners on top*/
+
+.progress-bar {
+	width: 0;
+	animation: progress 1.5s ease-in-out forwards;
+	
+	.title {
+		opacity: 0;
+		animation: show 0.35s forwards ease-in-out 0.5s;
+	}
+}
+
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} 
+@keyframes show  {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#tabsJustified {
+	border: none;
 }
 
 /*------------------------------------------------*/
@@ -524,15 +595,15 @@ footer {
 		background: rgba(52, 83, 125, 1);
 		box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.4);
 		position: absolute;
-		width: 120px;
+		width: 140px;
 		height: 67px;
-		left: 10px;
+		left: 0px;
 		top: -14px;
 		z-index: -1;
 	}
 
 
-	.nav-link:hover::after {
+	.main-nav .nav-link:hover::after {
 		content: "";
 		display: block;
 		background: #3f679b;
@@ -551,9 +622,9 @@ footer {
 		background: #3f679b;
 		box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.4);
 		position: absolute;
-		width: 120px;
+		width: 140px;
 		height: 67px;
-		left: 10px;
+		left: 0px;
 		top: -14px;
 		z-index: -1;
 	}
