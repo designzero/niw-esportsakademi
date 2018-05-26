@@ -101,34 +101,44 @@ a {
 	box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);
 }
 
+.btn-primary {
+	background: #34537D !important;
+	border: none !important;
+	box-shadow: none !important;
+	position: relative;
+}
+
 .btn-primary.active {
 	background: #466083 !important; 
-	border-color: #1D3C52;
+	border-color: #466083;
+	border: none;
+	position: relative;
+}
+
+.btn-primary:active:hover {
+	background: #466083 !important; 
+	border-color: #466083;
 	border: none;
 }
 
 .btn-primary:hover {
 	background: #3f679b !important;
-	box-shadow: none;
+	border-color: #34537D;
 	box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);
 }
 
 .btn-primary:active {
 	background: #34537D !important;
-	border: none;
+	border-color: #34537D;
+
 	/*box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4) !important;*/
 }
 
-.btn-primary {
-	background: #34537D !important;
-	border: none;
-	/*box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4) !important;*/
-}
-
-.btn-primary:focus, .btn-dark:visited {
+.btn-primary:focus {
 	background: #466083 !important;
 	border: none;
-	box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);
+	box-shadow: none !important;
+	/*box-shadow: inset 0 0 4px 0 rgba(0,0,0,0.4);*/
 }
 
 
@@ -162,6 +172,10 @@ footer {
 	right: 0;
 }
 
+/*------------------------------------------------*/
+/*Lessons*/
+/*------------------------------------------------*/
+
 .card-body {
 	padding-top: 0.8em;
 }
@@ -169,6 +183,21 @@ footer {
 .bg-card {
 	background: #1D3C52;
 	border: 1px solid #7A8994;
+}
+
+.carousel-indicators {
+	position: absolute;
+	bottom: -15px;
+}
+
+.carousel-control-prev {
+	position: absolute;
+	left: -110px;
+}
+
+.carousel-control-next {
+	position: absolute;
+	right: -110px;
 }
 
 .btn-lsearch {
@@ -373,9 +402,24 @@ footer {
   }
 }
 
+/*#upload-test {
+	position: relative;
+	z-index: 1;
+}*/
 
 #tabsJustified {
 	border: none;
+}
+
+#tabsJustified>li>a[data-target="#upload-test"]:after {
+    height: 6px;
+    width: 205%;
+    background: #466083;
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: -100%;
+    z-index: 1;
 }
 
 /*------------------------------------------------*/

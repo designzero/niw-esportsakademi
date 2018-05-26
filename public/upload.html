@@ -38,14 +38,14 @@
           </div>
         </nav>
 		<div class="container-fluid text-center pt-10">
-			<div class="jumbotron bg-niw-dark"></div>
+			<div class="top-spacer my-4"></div>
 			
 			<section class="container py-4">
 		        <div class="row">
-		            <div class="col-md-12">
+		            <div class="col-md-12 col-lg-10 mx-auto">
 		                <ul id="tabsJustified" class="nav nav-tabs">
-		                    <li class="nav-item"><a href="" data-target="#upload-video" data-toggle="tab" class="nav-link btn-primary active">Video</a></li>
-		                    <li class="nav-item"><a href="" data-target="#upload-test" data-toggle="tab" class="nav-link btn-primary">Prov</a></li>
+		                    <li class="nav-item outer-shadow"><a href="" data-target="#upload-video" data-toggle="tab" class="nav-link btn-primary active">Video</a></li>
+		                    <li class="nav-item outer-shadow"><a href="" data-target="#upload-test" data-toggle="tab" class="nav-link btn-primary">Prov</a></li>
 		                </ul>
 		                <div id="tabsJustifiedContent" class="tab-content bg-niw-medium">
 		                    <div id="upload-video" class="tab-pane fade outer-shadow py-4">
@@ -61,54 +61,58 @@
 		                                <div class="top-spacer"></div>
 		                                <div class="row">
 
-		                                	<div class="col-md-5">
-		                                		<div class="container-fluid mb-4">
+		                                	<div class="col-md-6">
+		                                		<div class="container-fluid">
 		                                			<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg">
-		                                		</div>
-
-		                                		<div class="input-group input-group-sm text-left mb-3">
-		                                		  <div class="custom-file">
-		                                		    <input type="file" class="custom-file-input" id="inputGroupFile01">
-		                                		    <label class="custom-file-label" for="inputGroupFile01">Välj fil</label>
-		                                		  </div>
+		                                		
+			                                		<div class="input-group input-group-sm text-left mt-3">
+			                                		  <div class="custom-file">
+			                                		    <input type="file" class="custom-file-input" id="inputGroupFile01">
+			                                		    <label class="custom-file-label" for="inputGroupFile01">Välj fil</label>
+			                                		    <!-- <label class="btn btn-default">
+			                                		        Välj fil <input type="file" hidden>
+			                                		    </label> -->
+			                                		  </div>
+			                                		</div>
 		                                		</div>
 		                                	</div>
 
-		                                	<div class="col-md-6">
-			                                <div class="input-group input-group-sm mb-3">
-			                                  <div class="input-group-prepend">
-			                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Lektion</button>
-			                                    <div class="dropdown-menu">
-			                                      <a class="dropdown-item" href="#">de_dust2</a>
-			                                      <a class="dropdown-item" href="#">de_cache</a>
-			                                      <a class="dropdown-item" href="#">de_inferno</a>
-			                                  	</div>
-			                                  </div>
-			                                  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="de_dust2">
-			                           		</div>
-
-			                                <div class="input-group input-group-sm mb-3">
-			                                  <div class="input-group-prepend">
-			                                    <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Taktik</button>
-			                                    <div class="dropdown-menu">
-			                                      <a class="dropdown-item" href="#">Taktik 1</a>
-			                                      <a class="dropdown-item" href="#">Taktik 2</a>
-			                                      <a class="dropdown-item" href="#">Taktik 3</a>
-			                                      <div role="separator" class="dropdown-divider"></div>
-			                                      <a class="dropdown-item" href="#">Smokes</a>
-			                                      <a class="dropdown-item" href="#">Flashar</a>
-			                                      <a class="dropdown-item" href="#">Molotov</a>
-			                                    </div>
-			                                  </div>
-			                                  <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Taktik 1">
-			                                </div>
-
+		                                	<div class="col-md-5">
 			                                <div class="input-group input-group-sm mb-3">
 			                                  <div class="input-group-prepend">
 			                                    <span class="input-group-text" id="inputGroup-sizing-sm">Titel</span>
 			                                  </div>
 			                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Smoke to bombsite B">
 			                                </div>
+			                                <div class="input-group mb-3">
+			                                  <div class="input-group-prepend">
+			                                    <label class="input-group-text" for="inputGroupSelect01">Lektion</label>
+			                                  </div>
+			                                  <select class="custom-select" id="inputGroupSelect01">
+			                                    <option value="1">de_dust2</option>
+			                                    <option value="2">de_cache</option>
+			                                    <option value="3">de_inferno</option>
+			                                    <option value="4">de_nuke</option>
+			                                  </select>
+			                                </div>
+			                              
+			                               <div class="input-group mb-3">
+			                                  <div class="input-group-prepend">
+			                                    <label class="input-group-text" for="inputGroupSelect01">Taktik/Granat</label>
+			                                  </div>
+			                                  <select class="custom-select" id="inputGroupSelect01">
+				                                  <optgroup label="Taktiker">  
+				                                    <option value="1">Taktik 1</option>
+				                                    <option value="2">Taktik 2</option>
+				                                    <option value="3">Taktik 3</option>
+				                                  </optgroup>
+				                                    <optgroup label="Granater">  
+				                                    <option value="1">Smokes</option>
+				                                    <option value="2">Flashar</option>
+				                                    <option value="3">Molotovs</option>
+				                                  </optgroup>
+			                                  </select>
+			                                </div>		                                
 			                    		</div>
 			                    	</div>
 				                    <div class="top-spacer"></div>
