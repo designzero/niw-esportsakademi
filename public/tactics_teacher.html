@@ -18,7 +18,7 @@
 			<div class="nav-spacer"></div>
 			<ul class="navbar-nav main-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="lessons.html">Lektioner <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="lessons_teacher.html">Lektioner <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link nav-link-select" href="tactics.html">Karta</a>
@@ -26,15 +26,21 @@
 			</ul>
 			<ul class="navbar-nav nav-item-side ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link nav-profile" href="profile_student.html">Profil<img src="img/baseline_account_circle_white_36dp.png"></a>
+					<a class="nav-link admin" href="upload.html"><img src="img/upload.png"></a>
 				</li> 
+				<li class="nav-item active">
+					<a class="nav-link admin" href="student_statistics.html">Elever</a>
+				</li>  
+				<li class="nav-item active">
+					<a class="nav-link nav-profile" href="profile_teacher.html">Admin<img src="img/baseline_account_circle_white_36dp.png"></a>
+				</li>
 			</ul>
 		</div>
 	</nav>
 	<div class="container-fluid">
 		<h3 class="mapTitle mt-4">de_dust2</h3>
 		<div class="canvasContainer mx-auto">
-			<div id="toolMenu" class="align-top" style="display: none">
+			<div id="toolMenu" class="align-top">
 				<ul>
 					<li><img src="img/baseline_edit_white_36dp.png" width="36" id="pen" title="Rita (Klicka för fler färgval)"></li>
 					<li><img src="img/eraser-36.png" width="36" id="eraser" title="Sudda"></li>
@@ -48,31 +54,33 @@
 				<canvas id="mapCanvas" width="700" height="700"></canvas>
 				<canvas id="drawCanvas" width="700" height="700"></canvas>
 			</div>
-			<div id="mapMenu" style="display: none">
+			<div id="mapMenu">
 				<ul>
-					<li><img class="mapIcon" id="cache" src="/img/de_cache_radar.png" width="50"/><br>Cache</li>
-					<li><img class="mapIcon" id="cbble" src="/img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
-					<li><img class="mapIcon" id="dust2" src="/img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
-					<li><img class="mapIcon" id="inferno" src="/img/de_inferno_radar.png" width="50"/><br>Inferno</li>
-					<li><img class="mapIcon" id="mirage" src="/img/de_mirage_radar.png" width="50"/><br>Mirage</li>
-					<li><img class="mapIcon" id="nuke" src="/img/de_nuke_radar.png" width="50"/><br>Nuke</li>
-					<li><img class="mapIcon" id="overpass" src="/img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
+					<li><img class="mapIcon" id="cache" src="img/de_cache_radar.png" width="50"/><br>Cache</li>
+					<li><img class="mapIcon" id="cbble" src="img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
+					<li><img class="mapIcon" id="dust2" src="img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
+					<li><img class="mapIcon" id="inferno" src="img/de_inferno_radar.png" width="50"/><br>Inferno</li>
+					<li><img class="mapIcon" id="mirage" src="img/de_mirage_radar.png" width="50"/><br>Mirage</li>
+					<li><img class="mapIcon" id="nuke" src="img/de_nuke_radar.png" width="50"/><br>Nuke</li>
+					<li><img class="mapIcon" id="overpass" src="img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
 				</ul>
 				<div id="mapsDrawer"><div id="mapsArrow">^</div>Kartor</div>
 			</div>
-			<h5 id="student">student</h5>	
-			<!-- <p><a href="student.html" target="_blank"><button>öppna student i ny flik</button></a></p> -->
-		</div>
+			<iframe id="studentsmall" src="tactics_studentsmall2.html"></iframe>
+			<h5>lärare <a href="#student" class="btn btn-dark btn-sm py-0"> Växla studentvy</a></h5>
 
-		<!-- </div> -->
-		<nav class="navbar fixed-bottom navbar-dark py-0 bg-niw-medium">
-			<a class="navbar-brand mx-auto" href="#">When gaming becomes lifestyle</a>
-		</nav>
+
+		</div>
+		<footer>
+			<nav class="navbar navbar-dark py-0 bg-niw-medium">
+				<a class="navbar-brand mx-auto" href="#">When gaming becomes lifestyle</a>
+			</nav>
+		</footer>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/popper.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="socket.io/socket.io.js"></script>
-		<!-- <script src="js/script.js"></script> -->
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/script.js"></script>
 		<script src="js/tactics.js"></script>
 	</body>
 	</html>

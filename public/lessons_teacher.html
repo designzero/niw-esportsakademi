@@ -18,7 +18,7 @@
 			<div class="nav-spacer"></div>
 			<ul class="navbar-nav main-nav">
 				<li class="nav-item active">
-					<a class="nav-link nav-link-select" href="lessons.html">Lektioner <span class="sr-only">(current)</span></a>
+					<a class="nav-link nav-link-select" href="lessons_teacher.html">Lektioner <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="tactics.html">Karta</a>
@@ -26,9 +26,15 @@
 			</ul>
 			<ul class="navbar-nav nav-item-side ml-auto">
 				<li class="nav-item active">
-					<a class="nav-link nav-profile" href="profile_student.html">Profil<img src="img/baseline_account_circle_white_36dp.png"></a>
+					<a class="nav-link admin" href="upload.html"><img src="img/upload.png"></a>
+				</li> 
+				<li class="nav-item active">
+					<a class="nav-link admin" href="student_statistics.html">Elever</a>
+				</li>  
+				<li class="nav-item active">
+					<a class="nav-link nav-profile" href="profile_teacher.html">Admin<img src="img/baseline_account_circle_white_36dp.png"></a>
 				</li>
-			</ul> 
+			</ul>   
 		</div>
 	</nav>
 	<nav aria-label="breadcrumb">
@@ -37,15 +43,20 @@
 		</ol>
 	</nav>
 	<div class="container">
-		<div class="col-md-6 col-lg-4 mx-auto">
-			<div class="input-group">
-				<input type="text" class="form-control bg-dark text-white" placeholder="Sök...">
-				<span class="input-group-btn">
-					<a href="lesson_de_dust2_tactic_1_3.html"><!-- Example search -->
-						<button class="btn btn-dark btn-lsearch" type="button"><img src="img/baseline-search-24px.svg"></button>
-					</a>
-				</span>
+		<div class="row justify-content-end">
+			<div class="col-md-6 offset-md-2 col-lg-4">
+				<div class="input-group">
+					<input type="text" class="form-control bg-dark text-white" placeholder="Sök...">
+					<span class="input-group-btn">
+						<a href="lesson_de_dust2_tactic_1_3.html"><!-- Example search -->
+							<button class="btn btn-dark btn-lsearch" type="button"><img src="img/baseline-search-24px.svg"></button>
+						</a>
+					</span>
+				</div>
 			</div>
+			<div class="col-md-3 col-lg-4 text-right">
+				<a href="lessons_teacher_edit.html"><button class="btn btn-dark btn-stats"><img src="img/ic_settings.png" alt="Responsive-image"></button></a>
+			</div>	
 		</div>
 		<div class="top-spacer"></div>
 		<div class="card-deck">

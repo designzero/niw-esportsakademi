@@ -257,7 +257,7 @@ footer {
     padding: 6px 0;
     font-size: 12px;
     line-height: 1.428571429;
-    border-radius: 15px;
+    border-radius: 15px !important;
 }
 
 .video {
@@ -379,10 +379,10 @@ footer {
 	}
 }
 
-#btn-remove-question {
-	display: none;
+/*#btn-remove-question {
+	display: block;
 }
-
+*/
 
 @keyframes progress {
   from {

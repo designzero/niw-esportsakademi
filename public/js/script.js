@@ -38,28 +38,44 @@ $(document).ready(function() {
 		
 		// bar = ($(".progress").width()) / ($('.progress').parent().width() * 100);
   // 		// console.log(bar);
-		
+
 		// while (bar < 100) {
 		// 	console.log(bar);
 		// 	bar = ($(".progress").width()) / ($('.progress').parent().width() * 100);
 		//   	$(".progress-bar").text($(".progress").width());
 		// };
 		
-    	setTimeout(function() {
-    		bar = $(".progress").width();
-    	console.log(bar);
-	    $('#videoUploadModal').modal();
-	}, 1500);
+		setTimeout(function() {
+			bar = $(".progress").width();
+			console.log(bar);
+			$('#videoUploadModal').modal();
+		}, 1500);
 	});
 
 	$("a[href='#add-question']").click(function(e){
 		$(".question-add:first").clone(true).insertAfter(".question-add:last");
-		$(".question-add:last #btn-remove-question").css("display", "block");
-
+		$(".question-add:last .added-answer").remove();
 	});
 
 	$("a[href='#remove-question']").click(function(e){
-		$(".question-add:last").remove();
+		if ($(".question-add").length <= 1) {
+			$(e.target).parents(".question-add").find(".added-answer").remove();
+		}
+		else {
+			$(e.target).parents(".question-add").remove();
+		}	
+	});
+
+
+	$(".btn-add-answer").click(function(e){
+		let lastAnswer = $(e.target).parents(".question-add").find(".answer-add:last");
+		let lastAnswerText = $(e.target).parents(".question-add").find(".answer-add:last > input").attr("placeholder");
+		$(lastAnswer).clone(true).insertAfter($(e.target).parents(".question-add").find(".answer-add:last"));
+
+		lastAnswer = $(e.target).parents(".question-add").find(".answer-add:last");
+		
+		$(lastAnswer).addClass("added-answer");
+		$(lastAnswer).children("input").attr("placeholder", "Svar " + (parseInt(lastAnswerText.slice(4)) + 1));
 	});
 
 	//------------------------------------------------

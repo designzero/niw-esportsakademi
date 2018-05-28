@@ -1,263 +1,269 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>NiW Esportsakademi</title>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
-		<nav class="navbar navbar-expand-md navbar-dark navbar-niw bg-niw-medium">
-          <a class="navbar-brand" href="index.html"><img src="img/logga.png" alt="Niw logo"><span id="logoText"></span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="nav-spacer"></div>
-            <ul class="navbar-nav main-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="lessons.html">Lektioner <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link nav-link2" href="tactics.html">Karta</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav nav-item-side ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link admin nav-link-select" href="upload.html"><img src="img/upload.png"></a>
-              </li> 
-              <li class="nav-item active">
-                <a class="nav-link admin" href="student_statistics.html">Elever</a>
-              </li>  
-              <li class="nav-item active">
-                <a class="nav-link nav-profile" href="profile_teacher.html">Admin<img src="img/baseline_account_circle_white_36dp.png"></a>
-              </li>    
-            </ul>       
-          </div>
-        </nav>
-		<div class="container-fluid pt-10">
-			<div class="top-spacer my-2"></div>
-			
-			<section class="container py-4">
-		        <div class="row">
-		            <div class="col-md-12 col-lg-10 mx-auto">
-		                <ul id="tabsJustified" class="nav nav-tabs">
-		                    <li class="nav-item outer-shadow"><a href="" data-target="#upload-video" data-toggle="tab" class="nav-link btn-primary active">Video</a></li>
-		                    <li class="nav-item outer-shadow"><a href="" data-target="#upload-test" data-toggle="tab" class="nav-link btn-primary">Prov</a></li>
-		                </ul>
-		                <div id="tabsJustifiedContent" class="tab-content bg-niw-medium">
-		                    <div id="upload-video" class="tab-pane fade outer-shadow py-4 active show">
-		                        <div class="col-md-10 offset-md-1">
+<head>
+	<title>NiW Esportsakademi</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark navbar-niw bg-niw-medium">
+		<a class="navbar-brand" href="index.html"><img src="img/logga.png" alt="Niw logo"><span id="logoText"></span></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="nav-spacer"></div>
+			<ul class="navbar-nav main-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="lessons_teacher.html">Lektioner <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="tactics.html">Karta</a>
+				</li>
+			</ul>
+			<ul class="navbar-nav nav-item-side ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link admin nav-link-select" href="upload.html"><img src="img/upload.png"></a>
+				</li> 
+				<li class="nav-item active">
+					<a class="nav-link admin" href="student_statistics.html">Elever</a>
+				</li>  
+				<li class="nav-item active">
+					<a class="nav-link nav-profile" href="profile_teacher.html">Admin<img src="img/baseline_account_circle_white_36dp.png"></a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid pt-10">
+		<div class="top-spacer my-2"></div>
+		
+		<section class="container py-4">
+			<div class="row">
+				<div class="col-md-12 col-lg-10 mx-auto">
+					<ul id="tabsJustified" class="nav nav-tabs">
+						<li class="nav-item outer-shadow"><a href="" data-target="#upload-video" data-toggle="tab" class="nav-link btn-primary active">Video</a></li>
+						<li class="nav-item outer-shadow"><a href="" data-target="#upload-test" data-toggle="tab" class="nav-link btn-primary">Prov</a></li>
+					</ul>
+					<div id="tabsJustifiedContent" class="tab-content bg-niw-medium">
+						<div id="upload-video" class="tab-pane fade outer-shadow py-4 active show">
+							<div class="col-md-10 offset-md-1">
 
-		                                <div class="pt-1" id="upload-progress" style="width: 100%">
-		                                  <div class="progress">
-		                                    <div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 100%">
-		                                    <span class="title">100%</span>
-		                                    </div>
-		                                  </div>
-		                                </div>
-		                                <div class="top-spacer"></div>
-		                                <div class="row mb-4">
+								<div class="pt-1" id="upload-progress" style="width: 100%">
+									<div class="progress">
+										<div class="progress-bar bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="max-width: 100%">
+											<span class="title">100%</span>
+										</div>
+									</div>
+								</div>
+								<div class="top-spacer"></div>
+								<div class="row mb-4">
 
-		                                	<div class="col-md-6">
-		                                		<div class="container-fluid">
-		                                			<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg">
-		                                		
-			                                		<div class="input-group input-group-sm text-left mt-3">
-			                                		  <div class="custom-file">
-			                                		    <input type="file" class="custom-file-input" id="inputGroupFile01">
-			                                		    <label class="custom-file-label" for="inputGroupFile01">Välj fil</label>
+									<div class="col-md-6">
+										<div class="container-fluid">
+											<img class="img-fluid" src="img/de_dust2_smoke1_1.jpg">
+											
+											<div class="input-group input-group-sm text-left mt-3">
+												<div class="custom-file">
+													<input type="file" class="custom-file-input" id="inputGroupFile01">
+													<label class="custom-file-label" for="inputGroupFile01">Välj fil</label>
 			                                		    <!-- <label class="btn btn-default">
 			                                		        Välj fil <input type="file" hidden>
-			                                		    </label> -->
+			                                		      </label> -->
+			                                		    </div>
 			                                		  </div>
 			                                		</div>
-		                                		</div>
-		                                	</div>
+			                                	</div>
 
-		                                	<div class="col-md-6">
-			                                <div class="input-group input-group-sm mb-3">
-			                                  <div class="input-group-prepend">
-			                                    <span class="input-group-text" id="inputGroup-sizing-sm">Titel</span>
-			                                  </div>
-			                                  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Smoke to bombsite B">
+			                                	<div class="col-md-6">
+			                                		<div class="input-group input-group-sm mb-3">
+			                                			<div class="input-group-prepend">
+			                                				<span class="input-group-text" id="inputGroup-sizing-sm">Titel</span>
+			                                			</div>
+			                                			<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Smoke to bombsite B">
+			                                		</div>
+			                                		<div class="input-group mb-3">
+			                                			<div class="input-group-prepend">
+			                                				<label class="input-group-text" for="inputGroupSelect01">Lektion</label>
+			                                			</div>
+			                                			<select class="custom-select" id="inputGroupSelect01">
+			                                				<option value="1">de_dust2</option>
+			                                				<option value="2">de_cache</option>
+			                                				<option value="4">de_cbble</option>
+			                                				<option value="3">de_inferno</option>
+			                                				<option value="4">de_mirage</option>
+			                                				<option value="4">de_nuke</option>
+			                                				<option value="4">de_overpass</option>
+			                                			</select>
+			                                		</div>
+			                                		
+			                                		<div class="input-group mb-3">
+			                                			<div class="input-group-prepend">
+			                                				<label class="input-group-text" for="inputGroupSelect01">Kategori</label>
+			                                			</div>
+			                                			<select class="custom-select" id="inputGroupSelect01">
+			                                				<optgroup label="Taktiker">  
+			                                					<option value="1">Taktik 1</option>
+			                                					<option value="2">Taktik 2</option>
+			                                					<option value="3">Taktik 3</option>
+			                                				</optgroup>
+			                                				<optgroup label="Granater">  
+			                                					<option value="1">Smokes</option>
+			                                					<option value="2">Flashar</option>
+			                                					<option value="3">Molotovs</option>
+			                                				</optgroup>
+			                                			</select>
+			                                		</div>
+			                                		<div class="input-group mb-3">
+			                                			<div class="input-group-prepend">
+			                                				<label class="input-group-text" for="inputGroupSelect01">Steg</label>
+			                                			</div>
+			                                			<select class="custom-select" id="inputGroupSelect01">
+			                                				<option value="1">Steg 1</option>
+			                                				<option value="2">Steg 2</option>
+			                                				<option value="4">Steg 3</option>
+			                                				<option value="3">Steg 4</option>
+			                                				<option value="4">Steg 5</option>
+			                                			</select>
+			                                		</div>		                                
+			                                	</div>
 			                                </div>
-			                                <div class="input-group mb-3">
-			                                  <div class="input-group-prepend">
-			                                    <label class="input-group-text" for="inputGroupSelect01">Lektion</label>
-			                                  </div>
-			                                  <select class="custom-select" id="inputGroupSelect01">
-			                                    <option value="1">de_dust2</option>
-			                                    <option value="2">de_cache</option>
-			                                    <option value="4">de_cbble</option>
-			                                    <option value="3">de_inferno</option>
-			                                    <option value="4">de_mirage</option>
-			                                    <option value="4">de_nuke</option>
-			                                    <option value="4">de_overpass</option>
-			                                  </select>
+			                                <div class="row">
+			                                	<div class="col-md-12">
+			                                		<div class="form-group">
+			                                			<label for="comment">Anteckningar från läraren:</label>
+			                                			<textarea class="form-control" rows="4" id="comment"></textarea>
+			                                		</div>
+			                                	</div>
 			                                </div>
-			                              
-			                               <div class="input-group mb-3">
-			                                  <div class="input-group-prepend">
-			                                    <label class="input-group-text" for="inputGroupSelect01">Kategori</label>
-			                                  </div>
-			                                  <select class="custom-select" id="inputGroupSelect01">
-				                                  <optgroup label="Taktiker">  
-				                                    <option value="1">Taktik 1</option>
-				                                    <option value="2">Taktik 2</option>
-				                                    <option value="3">Taktik 3</option>
-				                                  </optgroup>
-				                                    <optgroup label="Granater">  
-				                                    <option value="1">Smokes</option>
-				                                    <option value="2">Flashar</option>
-				                                    <option value="3">Molotovs</option>
-				                                  </optgroup>
-			                                  </select>
+			                                <div class="col-md-2 offset-md-10">
+			                                	<!-- <a href="#" data-toggle="modal" data-target="#videoUploadModal"> -->
+			                                		<a href="#upload-progress">
+			                                			<button class="btn btn-dark" type="button">Ladda upp&nbsp&nbsp<img src="img/upload.png"></button></a>
+			                                		</div>
+			                                		
+			                                	</div>
+			                                	<!-- Modal -->
+			                                	<div class="modal fade modal-video" id="videoUploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			                                		<div class="modal-dialog modal-dialog-centered" role="document">
+			                                			<div class="modal-content bg-modal">
+			                                				<div class="modal-header mx-auto">
+			                                					<h5 class="modal-title" id="exampleModalLongTitle">Videon är nu uppladdad!</h5>
+			                                				</div>
+			                                				<div class="modal-body">
+			                                					
+			                                				</div>
+			                                				<div class="modal-footer">
+			                                					<button type="button" class="btn btn-dark mr-auto" data-dismiss="modal">Skapa nytt</button>
+			                                					<a href="upload.html"><button type="button" class="btn btn-dark nextBtn">Klar</button></a>
+			                                				</div>
+			                                			</div>
+			                                		</div>
+			                                	</div><!-- Modal end -->
+			                                	
 			                                </div>
-			                                <div class="input-group mb-3">
-			                                  <div class="input-group-prepend">
-			                                    <label class="input-group-text" for="inputGroupSelect01">Steg</label>
-			                                  </div>
-			                                  <select class="custom-select" id="inputGroupSelect01">
-				                                <option value="1">Steg 1</option>
-			                                    <option value="2">Steg 2</option>
-			                                    <option value="4">Steg 3</option>
-			                                    <option value="3">Steg 4</option>
-			                                    <option value="4">Steg 5</option>
-			                                  </select>
-			                                </div>		                                
-			                    		</div>
-			                    	</div>
-			                    	<div class="row">
-			                    		<div class="col-md-12">
-			                    			<div class="form-group">
-			                                  <label for="comment">Anteckningar från läraren:</label>
-			                                  <textarea class="form-control" rows="4" id="comment"></textarea>
-			                                </div>
-			                    		</div>
-			                    	</div>
-			                   		<div class="col-md-2 offset-md-10">
-			                   			<!-- <a href="#" data-toggle="modal" data-target="#videoUploadModal"> -->
-			                    		<a href="#upload-progress">
-			                    			<button class="btn btn-dark" type="button">Ladda upp&nbsp&nbsp<img src="img/upload.png"></button></a>
-			                    	</div>
-			                    	
-			                    </div>
-			                    <!-- Modal -->
-			                    	<div class="modal fade modal-video" id="videoUploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-			                    	  <div class="modal-dialog modal-dialog-centered" role="document">
-			                    	    <div class="modal-content bg-modal">
-			                    	      <div class="modal-header mx-auto">
-			                    	        <h5 class="modal-title" id="exampleModalLongTitle">Videon är nu uppladdad!</h5>
-			                    	      </div>
-			                    	      <div class="modal-body">
-			                    	        
-			                    	      </div>
-			                    	      <div class="modal-footer">
-			                    	        <button type="button" class="btn btn-dark mr-auto" data-dismiss="modal">Skapa nytt</button>
-			                    	        <a href="upload.html"><button type="button" class="btn btn-dark nextBtn">Klar</button></a>
-			                    	      </div>
-			                    	    </div>
-			                    	  </div>
-			                    	</div><!-- Modal end -->
-			                    
-		                    </div>
-		                    <div id="upload-test" class="tab-pane fade py-4 outer-shadow">
-		                        <div class="row pb-2">
-		                            <div class="col-md-10 offset-md-1">
+			                                <div id="upload-test" class="tab-pane fade py-4 outer-shadow">
+			                                	<div class="row pb-2">
+			                                		<div class="col-md-10 offset-md-1">
 		                            	<!-- <div class="col-md-2 offset-md-10">
 				                    		<a href="upload.html"><button class="btn btn-dark" type="button">Lägg till fråga</button></a>
 				                    	</div> -->
 
 				                    	<div class="col-md-12 col-xl-10 offset-xl-1 mb-4 question-add">
 				                    		<div class="row">
-					                    		<div class="col-md-10 rounded bg-niw-light outer-shadow" style="height: 200px;z-index: 1">
-					                    		
-					                    			<div class="input-group my-3">
-					                    			  <div class="input-group-prepend">
-					                    			    <span class="input-group-text" id="inputGroup-sizing-sm">Fråga</span>
-					                    			  </div>
-					                    			  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="">
-					                    			</div>
+				                    			<div class="col-md-10 rounded bg-niw-light outer-shadow" style="min-height: 200px;z-index: 1">
+				                    				
+				                    				<div class="input-group my-3">
+				                    					<div class="input-group-prepend">
+				                    						<span class="input-group-text" id="inputGroup-sizing-sm">Fråga</span>
+				                    					</div>
+				                    					<input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="">
+				                    				</div>
 
-					                    			<div class="input-group input-group-sm mb-2">
-					                    			  <div class="input-group-prepend">
-					                    			    <div class="input-group-text">
-					                    			    <input type="radio" aria-label="Radio button for following text input">
-					                    			    </div>
-					                    			  </div>
-					                    			  <input type="text" class="form-control" aria-label="Text input with radio button" placeholder="Svar 1">
-					                    			</div>
+				                    				<div class="input-group input-group-sm answer-add mb-2">
+				                    					<div class="input-group-prepend">
+				                    						<div class="input-group-text">
+				                    							<input type="radio" aria-label="Radio button for following text input">
+				                    						</div>
+				                    					</div>
+				                    					<input type="text" class="form-control" aria-label="Text input with radio button" placeholder="Svar 1">
+				                    					
+				                    				</div>
+				                    				
+				                    				<div class="input-group input-group-sm mb-3">
+				                    					<div class="input-group-prepend">
+				                    						<div class="input-group-text">
+				                    							<input type="radio" class="btn-add-answer" aria-label="Radio button for following text input">
+				                    						</div>
+				                    					</div>
+				                    					<input type="text" class="form-control btn-add-answer" aria-label="Text input with radio button" placeholder="Lägg till alternativ">
+				                    				</div>
 
-					                    			<div class="input-group input-group-sm">
-					                    			  <div class="input-group-prepend">
-					                    			    <div class="input-group-text">
-					                    			    <input type="radio" aria-label="Radio button for following text input">
-					                    			    </div>
-					                    			  </div>
-					                    			  <input type="text" class="form-control" aria-label="Text input with radio button" disabled="disabled" placeholder="Lägg till alternativ">
-					                    			</div>
+				                    			</div>
+				                    			<div class="col-md-2 rounded-right text-center py-2 bg-niw-light outer-shadow" style="height: 150px">
+				                    				<div class="dropdown">
+				                    					<button class="btn btn-sm btn-outline-light dropdown-toggle mb-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				                    						Flerval
+				                    					</button>
+				                    					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+				                    						<a class="dropdown-item" href="#">Flerval</a>
+				                    						<a class="dropdown-item" href="#">Kryssrutor</a>
+				                    						<a class="dropdown-item" href="#">Eget svar</a>
+				                    					</div>
+				                    				</div>
+				                    				
+				                    				<a href="#add-question">	
+				                    					<button class="btn btn-outline-light btn-sm mb-2" type="button" aria-haspopup="true" aria-expanded="false" title="Lägg till fråga">+</button></a>
+				                    					
+				                    					<a href="#remove-question" id="btn-remove-question">	
+				                    						<button class="btn btn-outline-light btn-sm mb-2" type="button" aria-haspopup="true" aria-expanded="false" title="Ta bort fråga">-</button></a>	
+				                    					</div>
+				                    				</div>
+				                    				<!-- Modal -->
+				                    				<div class="modal fade" id="testUploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+				                    					<div class="modal-dialog modal-dialog-centered" role="document">
+				                    						<div class="modal-content bg-modal">
+				                    							<div class="modal-header mx-auto">
+				                    								<h5 class="modal-title" id="exampleModalLongTitle">Provet är nu uppladdat!</h5>
+				                    							</div>
+				                    							<div class="modal-body">
+				                    								
+				                    							</div>
+				                    							<div class="modal-footer">
+				                    								<button type="button" class="btn btn-dark mr-auto" data-dismiss="modal">Skapa nytt</button>
+				                    								<a href="upload.html"><button type="button" class="btn btn-dark nextBtn">Klar</button></a>
+				                    							</div>
+				                    						</div>
+				                    					</div>
+				                    				</div><!-- Modal end -->
+				                    			</div>
 
-					                    		</div>
-					                    		<div class="col-md-2 rounded-right text-center py-2 bg-niw-light outer-shadow" style="height: 150px">
-					                    			<!-- <div class="dropdown"> -->
-						                    		<a href="#add-question">	
-						                    			<button class="btn btn-outline-light btn-sm mb-2" type="button" aria-haspopup="true" aria-expanded="false" title="Lägg till fråga">+</button></a>
-					                    			   <!--  <div class="dropdown-menu">
-					                    			      <a class="dropdown-item" href="#">Fråga</a>
-					                    			      <a class="dropdown-item" href="#">Bild</a>
-					                    			    </div> -->
-					                    			<!-- </div> -->
-					                    			
-					                    			<a href="#remove-question" id="btn-remove-question">	
-						                    			<button class="btn btn-outline-light btn-sm mb-2" type="button" aria-haspopup="true" aria-expanded="false" title="Lägg till fråga">-</button></a>	
-					                    		</div>
-					                    	</div>
-					                    	<!-- Modal -->
-					                    	<div class="modal fade" id="testUploadModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-					                    	  <div class="modal-dialog modal-dialog-centered" role="document">
-					                    	    <div class="modal-content bg-modal">
-					                    	      <div class="modal-header mx-auto">
-					                    	        <h5 class="modal-title" id="exampleModalLongTitle">Provet är nu uppladdat!</h5>
-					                    	      </div>
-					                    	      <div class="modal-body">
-					                    	        
-					                    	      </div>
-					                    	      <div class="modal-footer">
-					                    	        <button type="button" class="btn btn-dark mr-auto" data-dismiss="modal">Skapa nytt</button>
-					                    	        <a href="upload.html"><button type="button" class="btn btn-dark nextBtn">Klar</button></a>
-					                    	      </div>
-					                    	    </div>
-					                    	  </div>
-					                    	</div><!-- Modal end -->
+				                    			<!-- <div class="top-spacer"></div> -->
+				                    			<div class="col-md-2 offset-md-10">
+				                    				<a href="#" data-toggle="modal" data-target="#testUploadModal"><button class="btn btn-dark" type="button">Ladda upp&nbsp&nbsp<img src="img/upload.png"></button></a>
+				                    			</div>
+				                    		</div>
 				                    	</div>
+				                    </div>
+				                  </div>
+				                </div>
+				              </div>
+				            </section>
 
-				                    	<!-- <div class="top-spacer"></div> -->
-		                                <div class="col-md-2 offset-md-10">
-				                    		<a href="#" data-toggle="modal" data-target="#testUploadModal"><button class="btn btn-dark" type="button">Ladda upp&nbsp&nbsp<img src="img/upload.png"></button></a>
-				                    	</div>
-		                            </div>
-		                        </div>
-		                    </div>
-		                </div>
-		            </div>
-		        </div>
-		    </section>
+				          </div>
 
-		</div>
+				          <footer>
+				          	<nav class="navbar navbar-dark py-0 bg-niw-medium">
+				          		<a class="navbar-brand mx-auto" href="#">When gaming becomes lifestyle</a>
+				          	</nav>
+				          </footer>
 
-		<footer>
-			<nav class="navbar navbar-dark py-0 bg-niw-medium">
-			  <a class="navbar-brand mx-auto" href="#">When gaming becomes lifestyle</a>
-			</nav>
-		</footer>
-
-		<script src="js/jquery.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<!-- <script src="/socket.io/socket.io.js"></script> -->
-		<script src="js/script.js"></script>
-	</body>
-</html>
+				          <script src="js/jquery.min.js"></script>
+				          <script src="js/popper.min.js"></script>
+				          <script src="js/bootstrap.min.js"></script>
+				          <!-- <script src="/socket.io/socket.io.js"></script> -->
+				          <script src="js/script.js"></script>
+				        </body>
+				        </html>
