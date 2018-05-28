@@ -354,12 +354,20 @@ footer {
 }
 
 
-
 /*------------------------------------------------*/
 /*Upload*/
 /*------------------------------------------------*/
 
 /* change border radius for the tab , apply corners on top*/
+
+#upload-progress {
+	display: none;
+}
+
+
+#upload-progress:target {
+	display: block;
+}
 
 .progress-bar {
 	width: 0;
@@ -369,6 +377,10 @@ footer {
 		opacity: 0;
 		animation: show 0.35s forwards ease-in-out 0.5s;
 	}
+}
+
+#btn-remove-question {
+	display: none;
 }
 
 
@@ -640,6 +652,19 @@ footer {
 
 
 	.main-nav .nav-link:hover::after {
+		content: "";
+		display: block;
+		background: #3f679b;
+		box-shadow: inset 0 2px 4px 0 rgba(0,0,0,0.4);
+		position: absolute;
+		width: 100px;
+		height: 67px;
+		left: 0;
+		top: -14px;
+		z-index: -1;
+	}
+
+	.nav-link.admin:hover::after {
 		content: "";
 		display: block;
 		background: #3f679b;

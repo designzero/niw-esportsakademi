@@ -31,6 +31,40 @@ $(document).ready(function() {
 	//------------------------------------------------
 	//Quiz
 	//------------------------------------------------
+
+	var bar;
+
+	$("a[href='#upload-progress']").click(function(e){
+		
+		// bar = ($(".progress").width()) / ($('.progress').parent().width() * 100);
+  // 		// console.log(bar);
+		
+		// while (bar < 100) {
+		// 	console.log(bar);
+		// 	bar = ($(".progress").width()) / ($('.progress').parent().width() * 100);
+		//   	$(".progress-bar").text($(".progress").width());
+		// };
+		
+    	setTimeout(function() {
+    		bar = $(".progress").width();
+    	console.log(bar);
+	    $('#videoUploadModal').modal();
+	}, 1500);
+	});
+
+	$("a[href='#add-question']").click(function(e){
+		$(".question-add:first").clone(true).insertAfter(".question-add:last");
+		$(".question-add:last #btn-remove-question").css("display", "block");
+
+	});
+
+	$("a[href='#remove-question']").click(function(e){
+		$(".question-add:last").remove();
+	});
+
+	//------------------------------------------------
+	//Quiz
+	//------------------------------------------------
 	
 	$("input[type='radio']").click(function () {
 		$(this).next("label").removeClass("bg-noselect");
