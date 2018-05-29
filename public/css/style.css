@@ -617,33 +617,6 @@ footer {
 		z-index: 1;
 	}
 
-/*	.nav-link::before {
-		content: "";
-		display: none;
-		position: absolute;
-		width: 100px;
-		height: 5px;
-		padding-top: 10px;
-		z-index: 1;
-	}
-*/
-
-/*	.nav-item:hover .nav-link {
-		position: absolute;
-		width: 100px;
-		top: 1px;
-	}*/
-
-	/*.nav-item:hover::before {
-		content: "";
-		display: block;
-		position: absolute;
-		width: 100px;
-		height: 2px;
-		left: 0;
-		z-index: 1;
-	}*/
-
 	.nav-item-side {
 		padding-right: 20px;
 		margin-right: 20px;
@@ -664,20 +637,32 @@ footer {
 		width: 100px;
 		height: 66px;
 		left: 0;
-		top: -13px;
+		top: -14px;
 		z-index: -1;
+	}
+
+	.main-nav .nav-item:hover .nav-link,
+	.nav-item-side .nav-item:hover .nav-link {
+		position: relative;
+		width: 100px;
+		top: 1px;
 	}
 
 
 	.nav-profile:hover::after {
 		width: 140px !important;
-		top: -13px !important;
 	}
 
 	.nav-profile img {
 		position: absolute;
 		top: 3px;
 		right: -15px;
+	}
+
+	.nav-link-select {
+		position: relative;
+		width: 100%;
+		top: 1px;
 	}
 
 	.nav-link-select::after {
@@ -694,8 +679,7 @@ footer {
 	}
 
 	.nav-profile.nav-link-select::after {
-		width: 140px;
-		top: -13px;
+		width: 140px !important;
 	}
 
 	#tabsJustified>li>a[data-target="#upload-test"]:after {
