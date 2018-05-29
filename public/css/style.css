@@ -202,12 +202,31 @@ footer {
 }
 
 .notes {
-	height: 90%;
-	min-height: 200px;
+	min-height: 70%;
+	padding-bottom: 1em;
 }
 
 .notes-shadow {
 	box-shadow: inset 0 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.notes-message {
+	display: none;
+}
+
+.btn-edit-lesson {
+	display: none;
+	position: absolute;
+	top: 28%;
+	left: 43%;
+	/*width: 15%;*/
+}
+
+.btn-edit-lesson-sm {
+	display: none;
+	position: absolute;
+	top: 18%;
+	left: 43%;
 }
 
 /*------------------------------------------------*/
@@ -271,6 +290,7 @@ footer {
 	width: 15%;
 }
 
+
 /*------------------------------------------------*/
 /*Quiz*/
 /*------------------------------------------------*/
@@ -327,14 +347,18 @@ footer {
 	border-bottom: 1px solid white;
 }
 
-#student-edit {
+.table-bio {
+	font-size: 1rem;
+}
+
+.student-edit {
 	display: none;
 	padding-top: 25px;
 	/*position: absolute;*/
 	/*height: 200px;*/
 }
 
-#student-stats img {
+.student-stats img {
 	max-height: 200px;
 }
 
@@ -399,14 +423,14 @@ footer {
 	border: none;
 }
 
-#tabsJustified>li>a[data-target="#upload-test"]:after {
+#tabsJustified>li>a[data-target="#upload-video"]:after {
     height: 6px;
-    width: 205%;
+    width: 205px;
     background: #466083;
     content: '';
     position: absolute;
     bottom: -5px;
-    left: -100%;
+    left: 0;
     z-index: 1;
 }
 
@@ -549,6 +573,28 @@ footer {
 }
 
 /*------------------------------------------------*/
+/*Lessons*/
+/*------------------------------------------------*/
+
+
+.carousel-indicators {
+	position: absolute;
+	bottom: -15px;
+}
+
+.carousel-control-prev {
+	position: absolute;
+	left: -2.5em;
+	width: 2.5em;
+}
+
+.carousel-control-next {
+	position: absolute;
+	right: -2.5em;
+	width: 2.5em;
+}
+
+/*------------------------------------------------*/
 /*Media queries*/
 /*------------------------------------------------*/
 
@@ -679,26 +725,20 @@ footer {
 		z-index: -1;
 	}
 
-/*------------------------------------------------*/
-/*Lessons*/
-/*------------------------------------------------*/
+	#tabsJustified>li>a[data-target="#upload-test"]:after {
+	    height: 6px;
+	    width: 205%;
+	    background: #466083;
+	    content: '';
+	    position: absolute;
+	    bottom: -5px;
+	    left: -100%;
+	    z-index: 1;
+	}
+
+	.table-bio {
+		font-size: 1em;
+	}
 
 
-.carousel-indicators {
-	position: absolute;
-	bottom: -15px;
 }
-
-.carousel-control-prev {
-	position: absolute;
-	left: -2.5em;
-	width: 2.5em;
-}
-
-.carousel-control-next {
-	position: absolute;
-	right: -2.5em;
-	width: 2.5em;
-}
-
-};

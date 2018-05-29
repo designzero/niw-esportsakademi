@@ -1,35 +1,40 @@
 $(document).ready(function() {
 	
 	//------------------------------------------------
-	//Navbar
+	//Buttons
 	//------------------------------------------------
 	
-	// $(".nav-item").click(function () {
-	//     if($(".nav-item").hasClass("bg-niw-menu") == true){
-	//         $(".nav-item").removeClass("bg-niw-menu");
-	//     }
-	//     $(this).addClass("bg-niw-menu");
+	$("#btn-edit-lessons").click(function () {
+		$(".btn-edit-lesson").toggle();
+		$(".btn-edit-lesson-sm").toggle();
+	});
 
-	// });
-
-
+	$(".btn-save-notes").click(function () {
+		$(".notes-message").fadeToggle();
+		setTimeout(function() {
+			$(".notes-message").fadeToggle();
+		}, 2000);
+	});
+	
 	$(".btn-stats").click(function () {
-		if ($(this).is("#btn-settings")) {
-			$("#student-stats").hide();
-			$("#student-edit").show().css("display", "flex");
+		if ($(this).is(".btn-settings")) {
+			let stats = $(this).parents(".row").find(".student-stats");
+			let edit = $(this).parents(".row").find(".student-edit");
+			stats.hide();
+			edit.show().css("display", "flex");
 			$(this).addClass("bg-niw-menu");
-			$("#btn-chart").removeClass("bg-niw-menu");
+			$(this).siblings(".btn-chart").removeClass("bg-niw-menu");
 		}
 		else {
-			$("#student-edit").hide();
-			$("#student-stats").show().css("display", "block");
+			$(this).parents(".row").find(".student-edit").hide();
+			$(this).parents(".row").find(".student-stats").show().css("display", "block");
 			$(this).addClass("bg-niw-menu");
-			$("#btn-settings").removeClass("bg-niw-menu");
+			$(this).siblings(".btn-settings").removeClass("bg-niw-menu");
 		}
 	});
 
 	//------------------------------------------------
-	//Quiz
+	//Upload
 	//------------------------------------------------
 
 	var bar;
@@ -78,6 +83,10 @@ $(document).ready(function() {
 		$(lastAnswer).children("input").attr("placeholder", "Svar " + (parseInt(lastAnswerText.slice(4)) + 1));
 	});
 
+	// $("a[href='#tab-video']").click(function () {
+	// 	$("#tab-video").css({"position": "relative", "z-index": "1 !important"});
+	// });
+
 	//------------------------------------------------
 	//Quiz
 	//------------------------------------------------
@@ -98,4 +107,21 @@ $(document).ready(function() {
 		$("input:checked").not(".correct").next().addClass("bg-wrong");
 		$(".correct:input:checked+label").addClass("bg-correct");
 	});
+
+
+	//------------------------------------------------
+	//Tactics
+	//------------------------------------------------	
+
+	$("a[href$='#student']").click(function() {
+	    if ( $('#studentsmall').css('visibility') == 'hidden' ) {
+			$('#studentsmall').css('visibility','visible');
+			$('.canvasContainer').removeClass('mx-auto');
+		}
+		else {
+			$('#studentsmall').css('visibility','hidden');
+			$('.canvasContainer').addClass('mx-auto');
+		}
+	});
+
 });
