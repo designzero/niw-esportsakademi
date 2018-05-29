@@ -115,12 +115,12 @@ $(document).ready(function() {
 	//------------------------------------------------	
 
 	$("a[href$='#student']").click(function() {
-		if ( $('#studentsmall').css('visibility') == 'hidden' ) {
-			$('#studentsmall').css('visibility','visible');
+		if ( $('#studentsmall').css('display') == 'none' ) {
+			$('#studentsmall').css('display','block');
 			$('.canvasContainer').removeClass('mx-auto');
 		}
 		else {
-			$('#studentsmall').css('visibility','hidden');
+			$('#studentsmall').css('display','none');
 			$('.canvasContainer').addClass('mx-auto');
 		}
 	});
@@ -128,6 +128,4 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$(".loader-container").fadeOut("medium");	
 	}, 1500);
-
-
 });

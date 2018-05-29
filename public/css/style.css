@@ -26,15 +26,16 @@ th {
 /*------------------------------------------------*/
 
 .navbar {
-	box-shadow: 0 0px 5px 2px rgba(121, 180, 250, 0.8);
-	animation: pulsate 2s ease-out infinite;
+	box-shadow: 0 0px 10px 3px rgba(121, 180, 250, 0.7);
+	/*box-shadow: 0 0px 5px 2px rgba(121, 180, 250, 0.8);*/
+	/*animation: pulsate 2s ease-out infinite;*/
 }
 
-@-webkit-keyframes pulsate {
+/*@-webkit-keyframes pulsate {
     0%   { box-shadow: 0 0 5px 2px rgba(121, 180, 250, 0.6); }
     50%  { box-shadow: 0 0 8px 3px rgba(121, 180, 250, 0.8); }
     100% { box-shadow: 0 0 5px 2px rgba(121, 180, 250, 0.6); }
-}
+}*/
 
 .main-nav li {
 	/*padding-top: 10px;*/
@@ -561,7 +562,7 @@ footer {
 }
 
 #studentsmall {
-	visibility: hidden;
+	/*visibility: hidden;*/
 	position: absolute;
 	display: inline-block;
 	bottom: -67px;
