@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	
+
 	//------------------------------------------------
 	//Buttons
 	//------------------------------------------------
@@ -115,7 +115,7 @@ $(document).ready(function() {
 	//------------------------------------------------	
 
 	$("a[href$='#student']").click(function() {
-	    if ( $('#studentsmall').css('visibility') == 'hidden' ) {
+		if ( $('#studentsmall').css('visibility') == 'hidden' ) {
 			$('#studentsmall').css('visibility','visible');
 			$('.canvasContainer').removeClass('mx-auto');
 		}
@@ -124,5 +124,10 @@ $(document).ready(function() {
 			$('.canvasContainer').addClass('mx-auto');
 		}
 	});
+
+	setTimeout(function() {
+		$(".loader-container").fadeOut("medium");	
+	}, 1500);
+
 
 });

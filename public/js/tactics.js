@@ -415,4 +415,5 @@ document.addEventListener("DOMContentLoaded", function() {
 	// socket.on('ping', function(data) {
 	// 	pingAnim(context, data.x, data.y);
 	// });
+
 });
