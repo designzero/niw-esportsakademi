@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Taktikbordet</title>
+	<title>NiW Esportsakademi</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<div class="container center">
-		<h2 class="mapTitle" style="font-size: 1em">de_dust2</h2>
-		
-		<div id="toolMenu" style="display: none">
+<body style="padding: 0; min-height: 0">
+<!-- 	<nav class="navbar navbar-expand-md navbar-dark bg-niw-medium">
+		  <a class="navbar-brand" href="index.html"><img src="img/logga.png" alt="Niw logo"><span id="logoText"></span></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+		    <div class="nav-spacer"></div>
+		    <ul class="navbar-nav main-nav">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="lessons.html">Lektioner <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item active">
+		        <a class="nav-link" href="tactics_student.html">Karta</a>
+		      </li>
+		    </ul>
+		    <ul class="navbar-nav nav-item-side ml-auto">
+		       <li class="nav-item active">
+		        <a class="nav-link nav-profile" href="profile_student.html">Profil<img src="img/baseline_account_circle_white_36dp.png"></a>
+		      </li> 
+		  </div>
+		</nav> -->
+		<h5 class="mapTitle mt-4">de_dust2</h5>
+		<div class="canvasContainer" style="min-width: 304px; height: 304px; left: 0">
+			<div id="toolMenu" class="align-top" style="display: none">
 	   			<!-- <ul>
-	   				<li><button class="redColor" style="color:red">Röd</button><br><button class="blueColor" style="color:#5d79ae">CT</button><button class="orangeColor" style="color:#de9b35">T</button> <br>Rita</li>
-	   				<li><button class="eraser">Sudda</button></li>
-	   				<li><button class="clear">Rensa</button></li>
-	   				<li><button class="zoomIn">Zooma in</button><br><button class="zoomOut">Zooma ut</button><br>Zoom</li>
+	   				<li><img src="img/baseline_edit_white_36dp.png" width="36" id="pen" title="Rita (Klicka för fler färgval)"></li>
+	   				<li><img src="img/eraser-36.png" width="36" id="eraser" title="Sudda"></li>
+	   				<li><img src="img/baseline_undo_white_36dp.png" width="36" class="undo" title="Ångra"></li>
+	   				<li><img src="img/baseline_redo_white_36dp.png" width="36" class="redo" title="Gör om"></li>
+	   				<li><img src="img/baseline_rotate_right_white_36dp.png" width="36" class="rotateCW" title="Rotera"></li>
+	   				<li><img src="img/outline_delete_white_36dp.png" class="clear" title="Rensa"></li>
 	   			</ul> -->
 	   		</div>
-	   		<div id="canvases" style="width: 300px; height: 300px">
+	   		<div id="canvases" style="width: 304px; height: 304px">
 	   			<canvas id="mapCanvas" width="700" height="700" style="width: 300px; height: 300px"></canvas>
 	   			<canvas id="drawCanvas" width="700" height="700" style="width: 300px; height: 300px"></canvas>
 	   		</div>
 	   		<div id="mapMenu" style="display: none">
 	   			<!-- <ul>
-	   				<li><img class="mapIcon" id="cache" src="/img/de_cache_radar.png" width="50"/><br>Cache</li>
-	   				<li><img class="mapIcon" id="cbble" src="/img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
-	   				<li><img class="mapIcon" id="dust2" src="/img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
-	   				<li><img class="mapIcon" id="inferno" src="/img/de_inferno_radar.png" width="50"/><br>Inferno</li>
-	   				<li><img class="mapIcon" id="mirage" src="/img/de_mirage_radar.png" width="50"/><br>Mirage</li>
-	   				<li><img class="mapIcon" id="nuke" src="/img/de_nuke_radar.png" width="50"/><br>Nuke</li>
-	   				<li><img class="mapIcon" id="overpass" src="/img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
+	   				<li><img class="mapIcon" id="cache" src="img/de_cache_radar.png" width="50"/><br>Cache</li>
+	   				<li><img class="mapIcon" id="cbble" src="img/de_cbble_radar.png" width="50"/><br>Cobblestone</li>
+	   				<li><img class="mapIcon" id="dust2" src="img/de_dust2_radar.png" width="50"/><br>Dust 2</li>
+	   				<li><img class="mapIcon" id="inferno" src="img/de_inferno_radar.png" width="50"/><br>Inferno</li>
+	   				<li><img class="mapIcon" id="mirage" src="img/de_mirage_radar.png" width="50"/><br>Mirage</li>
+	   				<li><img class="mapIcon" id="nuke" src="img/de_nuke_radar.png" width="50"/><br>Nuke</li>
+	   				<li><img class="mapIcon" id="overpass" src="img/de_overpass_radar.png" width="50"/><br>Overpass</li>	
 	   			</ul> -->
+	   			<div id="mapsDrawer"><div id="mapsArrow">^</div>Kartor</div>
 	   		</div>
-	   		<h3 id="student">student</h3>
 	   	</div>
-	   	<script src="/socket.io/socket.io.js"></script>
-	   	<script src="js/jquery.min.js"></script>
-	   	<script src="js/tactics.js"></script>
-	   </body>
-	   </html>
+	  <!--  	<footer>
+			<nav class="navbar navbar-dark py-0 bg-niw-medium">
+			  <a class="navbar-brand mx-auto" href="#">When gaming becomes a lifestyle</a>
+			</nav>
+		</footer> -->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/tactics.js"></script>
+	</body>
+	</html>

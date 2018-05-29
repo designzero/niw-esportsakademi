@@ -83,9 +83,10 @@ $(document).ready(function() {
 		$(lastAnswer).children("input").attr("placeholder", "Svar " + (parseInt(lastAnswerText.slice(4)) + 1));
 	});
 
-	// $("a[href='#tab-video']").click(function () {
-	// 	$("#tab-video").css({"position": "relative", "z-index": "1 !important"});
-	// });
+	$("a[data-toggle='tab']").click(function () {
+		$(this).parent().css({"z-index": "2"});
+		$(this).parent().siblings("li").css({"z-index": "1"});
+	});
 
 	//------------------------------------------------
 	//Quiz
