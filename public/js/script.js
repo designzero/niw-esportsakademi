@@ -33,6 +33,7 @@ $(document).ready(function() {
 		}
 	});
 
+
 	//------------------------------------------------
 	//Upload
 	//------------------------------------------------
@@ -41,8 +42,9 @@ $(document).ready(function() {
 
 	$("a[href='#upload-progress']").click(function(e){
 		
+		// Progress bar percentage value increase test
 		// bar = ($(".progress").width()) / ($('.progress').parent().width() * 100);
-  // 		// console.log(bar);
+  	// console.log(bar);
 
 		// while (bar < 100) {
 		// 	console.log(bar);
@@ -51,8 +53,7 @@ $(document).ready(function() {
 		// };
 		
 		setTimeout(function() {
-			bar = $(".progress").width();
-			console.log(bar);
+			// bar = $(".progress").width();
 			$('#videoUploadModal').modal();
 		}, 1500);
 	});
@@ -87,6 +88,7 @@ $(document).ready(function() {
 		$(this).parent().css({"z-index": "2"});
 		$(this).parent().siblings("li").css({"z-index": "1"});
 	});
+
 
 	//------------------------------------------------
 	//Quiz
@@ -127,5 +129,5 @@ $(document).ready(function() {
 
 	setTimeout(function() {
 		$(".loader-container").fadeOut("medium");	
-	}, 1500);
+	}, 1200);
 });
