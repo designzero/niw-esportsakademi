@@ -8,7 +8,7 @@ och node.js, express och socket.io på back-end.
 
 Installation för körning på lokal server (Windows):
 ---------------------------------------------------
-1. Installera node.js (https://nodejs.org) på serverdatorn (du kan behöva s
+1. Installera node.js (https://nodejs.org) på serverdatorn
 2. Packa upp innehållet i zip-filen i valfri mapp
 3. Öppna en terminal genom att klicka på "Node.js command prompt" i startmenyn och navigera till mappen
 4. Starta servern med: "node app.js"
