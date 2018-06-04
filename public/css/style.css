@@ -330,6 +330,7 @@ footer {
 
 .modal {
 	border: none;
+	bottom: 30%;
 }
 
 .modal-header, .modal-footer {
@@ -339,7 +340,6 @@ footer {
 .modal-video {
 	position: absolute;
 	left: 0;
-	bottom: 50%;
 }
 
 /*------------------------------------------------*/
